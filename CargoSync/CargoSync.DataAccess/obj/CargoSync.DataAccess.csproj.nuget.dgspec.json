@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NITRO 5\\Source\\Repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj": {}
+    "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NITRO 5\\Source\\Repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj": {
+    "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NITRO 5\\Source\\Repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj",
         "projectName": "CargoSync.DataAccess",
-        "projectPath": "C:\\Users\\NITRO 5\\Source\\Repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj",
+        "projectPath": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj",
         "packagesPath": "C:\\Users\\NITRO 5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NITRO 5\\Source\\Repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,15 +1,35 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using CargoSync.DataAccess.Models;
+using CargoSync.DataAccess.Data.Repositories;
+using Microsoft.EntityFrameworkCore;
+using CargoSync.DataAccess.Data;
 
 namespace CargoSync.Business.Services
 {
-    public class DeliveryService
+    public class DeliveryService : IDeliveryService
     {
-        // Implement delivery-related business logic here
-        public List<Delivery> GetDeliveries()
+        private  IDeliveryRepository _deliveryRepository;
+        private  CargoSyncDbContext _dbContext; 
+
+        public DeliveryService(IDeliveryRepository deliveryRepository, CargoSyncDbContext dbContext) // Modify the constructor
         {
-            // Example: return a list of deliveries
-            return new List<Delivery>();
+            _deliveryRepository = deliveryRepository;
+            _dbContext = dbContext;
+        }
+
+        public async Task<List<Delivery>> GetRecentDeliveriesAsync()
+        {
+            return await _deliveryRepository.GetRecentDeliveriesAsync();
+        }
+
+        public List<Delivery> GetRecentOrders(int count)
+        {
+            return _dbContext.Deliveries
+                .OrderByDescending(d => d.DeliveryID)
+                .Take(count)
+                .ToList();
         }
     }
 }

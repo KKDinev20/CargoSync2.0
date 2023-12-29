@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<CargoSync.DataAccess.Models.Delivery>
+
+@{
     ViewData["Title"] = "CargoSync";
 }
 
@@ -32,21 +34,39 @@
                 <span class="text">Recent Activity</span>
             </div>
             <div class="activity-data">
-                <div class="data names">
-                    <span class="data-title">DeliveryID</span>
+                <div class="row-header">
+                    <div class="data names">
+                        <span class="data-title">DeliveryID</span>
+                    </div>
+                    <div class="data joined">
+                        <span class="data-title">Destination</span>
+                    </div>
+                    <div class="data type">
+                        <span class="data-title">ETA</span>
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Status</span>
+                    </div>
                 </div>
-                <div class="data joined">
-                    <span class="data-title">Destination</span>
-
-                </div>
-                <div class="data type">
-                    <span class="data-title">ETA</span>
-
-                </div>
-                <div class="data status">
-                    <span class="data-title">Status</span>
-                </div>
+                @foreach (var order in Model)
+                {
+                    <div class="row">
+                        <div class="data names">
+                            <span class="data-title">@order.DeliveryID</span>
+                        </div>
+                        <div class="data joined">
+                            <span class="data-title">@order.Destination</span>
+                        </div>
+                        <div class="data type">
+                            <span class="data-title">@order.ETA</span>
+                        </div>
+                        <div class="data status">
+                            <span class="data-title">@order.Status</span>
+                        </div>
+                    </div>
+                }
             </div>
         </div>
+
     </div>
 </section>

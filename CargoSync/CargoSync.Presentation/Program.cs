@@ -1,4 +1,6 @@
-using CargoSync.DataAccess;
+using CargoSync.Business.Services;
+using CargoSync.DataAccess.Data;
+using CargoSync.DataAccess.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace CargoSync.Presentation
@@ -14,7 +16,12 @@ namespace CargoSync.Presentation
             string connectionString = "Server=.\\sqlexpress;Database=cargosync;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
 
             builder.Services.AddDbContext<CargoSyncDbContext>(options =>
-        options.UseSqlServer(connectionString));
+                options.UseSqlServer(connectionString));
+
+            // Add the service registration for IDeliveryService
+            builder.Services.AddScoped<IDeliveryRepository, DeliveryRepository>();
+            builder.Services.AddScoped<IDeliveryService, DeliveryService>();
+
 
             var app = builder.Build();
 
