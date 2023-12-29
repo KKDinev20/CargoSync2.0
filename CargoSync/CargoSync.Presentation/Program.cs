@@ -1,3 +1,6 @@
+using CargoSync.DataAccess;
+using Microsoft.EntityFrameworkCore;
+
 namespace CargoSync.Presentation
 {
     public class Program
@@ -6,8 +9,12 @@ namespace CargoSync.Presentation
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            string connectionString = "Server=.\\sqlexpress;Database=cargosync;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+
+            builder.Services.AddDbContext<CargoSyncDbContext>(options =>
+        options.UseSqlServer(connectionString));
 
             var app = builder.Build();
 

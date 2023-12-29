@@ -1,0 +1,15 @@
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.DataAccess\bin\Debug\net7.0\CargoSync.DataAccess.deps.json
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.DataAccess\bin\Debug\net7.0\CargoSync.DataAccess.runtimeconfig.json
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.DataAccess\bin\Debug\net7.0\CargoSync.DataAccess.dll
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.DataAccess\bin\Debug\net7.0\CargoSync.DataAccess.pdb
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.DataAccess\obj\Debug\net7.0\CargoSync.DataAccess.csproj.AssemblyReference.cache
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.DataAccess\obj\Debug\net7.0\CargoSync.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.DataAccess\obj\Debug\net7.0\CargoSync.DataAccess.AssemblyInfoInputs.cache
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.DataAccess\obj\Debug\net7.0\CargoSync.DataAccess.AssemblyInfo.cs
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.DataAccess\obj\Debug\net7.0\CargoSync.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.DataAccess\obj\Debug\net7.0\CargoSync.DataAccess.sourcelink.json
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.DataAccess\obj\Debug\net7.0\CargoSync.DataAccess.dll
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.DataAccess\obj\Debug\net7.0\refint\CargoSync.DataAccess.dll
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.DataAccess\obj\Debug\net7.0\CargoSync.DataAccess.pdb
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.DataAccess\obj\Debug\net7.0\CargoSync.DataAccess.genruntimeconfig.cache
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.DataAccess\obj\Debug\net7.0\ref\CargoSync.DataAccess.dll

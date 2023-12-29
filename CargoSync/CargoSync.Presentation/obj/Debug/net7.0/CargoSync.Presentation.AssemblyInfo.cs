@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CargoSync.Presentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b8ff49d8a5fdbd616c1172f1b94b5be6b8832e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7c44476c2925821efad32739eacc3b43f3d91e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("CargoSync.Presentation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CargoSync.Presentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
