@@ -34,39 +34,43 @@
                 <span class="text">Recent Activity</span>
             </div>
             <div class="activity-data">
-                <div class="row-header">
-                    <div class="data names">
-                        <span class="data-title">DeliveryID</span>
-                    </div>
-                    <div class="data joined">
-                        <span class="data-title">Destination</span>
-                    </div>
-                    <div class="data type">
-                        <span class="data-title">ETA</span>
-                    </div>
-                    <div class="data status">
-                        <span class="data-title">Status</span>
-                    </div>
-                </div>
-                @foreach (var order in Model)
-                {
-                    <div class="row">
-                        <div class="data names">
-                            <span class="data-title">@order.DeliveryID</span>
-                        </div>
-                        <div class="data joined">
-                            <span class="data-title">@order.Destination</span>
-                        </div>
-                        <div class="data type">
-                            <span class="data-title">@order.ETA</span>
-                        </div>
-                        <div class="data status">
-                            <span class="data-title">@order.Status</span>
-                        </div>
-                    </div>
-                }
-            </div>
-        </div>
+                <table class="table">
+                    <tbody>
+                        <tr class="row-header">
+                            <td><span class="data-title">DeliveryID</span></td>
+                            <td><span class="data-title">Destination</span></td>
+                            <td><span class="data-title">ETA</span></td>
+                            <td><span class="data-title">Status</span></td>
+                        </tr>
 
+                        @foreach (var order in Model)
+                        {
+                            <tr class="row">
+                                <td><span class="data-title">@order.DeliveryID</span></td>
+                                <td><span class="data-title">@order.Destination</span></td>
+                                <td><span class="data-title">@order.ETA</span></td>
+                                <td class="@GetStatusClass(order.Status)"><span class="data-title">@order.Status</span></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
     </div>
 </section>
+
+@functions {
+    string GetStatusClass(string status)
+    {
+        switch (status)
+        {
+            case "Delayed":
+                return "text-delayed"; 
+            case "On going":
+                return "text-ongoing"; 
+            case "Finished":
+                return "text-finished";
+            default:
+                return "";
+        }
+    }
+}
