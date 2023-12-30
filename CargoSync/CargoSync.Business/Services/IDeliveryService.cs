@@ -8,6 +8,9 @@ namespace CargoSync.Business.Services
     {
         List<Delivery> GetRecentOrders(int count);
 
+        int GetNewPackagesCount();
+        int GetInTransitPackagesCount();
+        int GetDeliveredPackagesCount();
 
     }
 }

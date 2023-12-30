@@ -22,5 +22,15 @@ namespace CargoSync.DataAccess.Data.Repositories
                                            .ToListAsync();
         }
 
+        public List<Delivery> GetAllDeliveries()
+        {
+            return _context.Deliveries.ToList();
+        }
+
+        public List<Delivery> GetDeliveriesByStatus(string status)
+        {
+            return _context.Deliveries.Where(d => d.Status == status).ToList();
+        }
+
     }
 }

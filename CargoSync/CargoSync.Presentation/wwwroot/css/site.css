@@ -295,22 +295,25 @@ body.dark .home .text {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 20px; /* Added margin for better spacing */
 }
 
-.dash-content .boxes .box {
-    display: flex;
-    flex-direction: column;
-    background-color: #1E1E1E;
-    align-items: center;
-    border-radius: 15px;
-    width: calc(100% / 3 - 15px);
-    padding: 15px 20px;
-    transition: var(--tran-05);
-}
+    .dash-content .boxes .box {
+        display: flex;
+        flex-direction: column;
+        background-color: #1E1E1E;
+        align-items: center;
+        border-radius: 15px;
+        width: calc(100% / 3 - 15px);
+        padding: 15px 20px;
+        transition: var(--tran-05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
 .boxes .box i {
     font-size: 35px;
     color: var(--text-color);
+    margin-bottom: 10px; 
 }
 
 .boxes .box .text {
@@ -318,12 +321,13 @@ body.dark .home .text {
     font-size: 18px;
     font-weight: 500;
     color: var(--text-color);
+    margin-bottom: 5px; 
 }
 
 .boxes .box .number {
     font-size: 40px;
     font-weight: 500;
-    color: var(--text-color);
+    color: var(--primary-color); 
 }
 
 .boxes .box.box2 {

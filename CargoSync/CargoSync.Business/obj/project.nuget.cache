@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OXPW88aU9C/z5HXXJUGRes3l3E6sp5Nr5wW0L9haYkV1oEl0hiMMh+OHeiQNk133qNTYVazx7vEvJXSfzScxwg==",
+  "dgSpecHash": "j41L7CZkqswYTNMQGWM6h3A7/ugW8zEUCzCJRTM2c+7rh77pBhioGwShPE+vhwBWa786mRYYw8arnnvEdAmVzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Business\\CargoSync.Business.csproj",
+  "projectFilePath": "C:\\Users\\NITRO 5\\Source\\Repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Business\\CargoSync.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NITRO 5\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\NITRO 5\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

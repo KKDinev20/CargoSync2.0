@@ -31,5 +31,20 @@ namespace CargoSync.Business.Services
                 .Take(count)
                 .ToList();
         }
+
+        public int GetNewPackagesCount()
+        {
+            return _dbContext.Deliveries.Count();
+        }
+
+        public int GetInTransitPackagesCount()
+        {
+            return _dbContext.Deliveries.Count(d => d.Status == "On going"); 
+        }
+
+        public int GetDeliveredPackagesCount()
+        {
+            return _dbContext.Deliveries.Count(d => d.Status == "Finished"); 
+        }
     }
 }

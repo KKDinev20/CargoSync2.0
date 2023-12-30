@@ -15,7 +15,15 @@ public class HomeController : Controller
     public IActionResult Index()
     {
 
-        var recentOrders = _deliveryService.GetRecentOrders(10);
+        List<Delivery> recentOrders = _deliveryService.GetRecentOrders(5);
+
+        int newPackagesCount = _deliveryService.GetNewPackagesCount();
+        int inTransitCount = _deliveryService.GetInTransitPackagesCount();
+        int deliveredCount = _deliveryService.GetDeliveredPackagesCount();
+
+        ViewData["NewPackagesCount"] = newPackagesCount;
+        ViewData["InTransitCount"] = inTransitCount;
+        ViewData["DeliveredCount"] = deliveredCount;
 
         return View(recentOrders);
     }
