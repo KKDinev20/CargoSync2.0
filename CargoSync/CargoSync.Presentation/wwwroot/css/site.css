@@ -324,10 +324,22 @@ body.dark .home .text {
     margin-bottom: 5px; 
 }
 
-.boxes .box .number {
+.boxes .box .number-packages {
     font-size: 40px;
     font-weight: 500;
-    color: var(--primary-color); 
+    color: var(--primary-color);
+}
+
+.boxes .box .number-intransit {
+    font-size: 40px;
+    font-weight: 500;
+    color: rosybrown;
+}
+
+.boxes .box .number-delivered {
+    font-size: 40px;
+    font-weight: 500;
+    color: seagreen;
 }
 
 .boxes .box.box2 {
@@ -337,6 +349,7 @@ body.dark .home .text {
 .boxes .box.box3 {
     background-color: #1E1E1E;
 }
+
 
 .dash-content .activity .activity-data {
     display: flex;
@@ -470,6 +483,10 @@ table, th, td {
     text-align: center;
 }
 
+tr.row:nth-child(even) {
+    background-color: #131212;
+}
+
 thead th {
     position: sticky;
     top: 0;
@@ -498,3 +515,4 @@ thead th {
         width: 100%;
     }
 }
+
