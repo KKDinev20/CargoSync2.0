@@ -22,7 +22,6 @@ namespace CargoSync.Presentation
             builder.Services.AddScoped<IDeliveryRepository, DeliveryRepository>();
             builder.Services.AddScoped<IDeliveryService, DeliveryService>();
 
-
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

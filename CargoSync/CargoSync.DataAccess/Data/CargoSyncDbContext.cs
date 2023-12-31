@@ -11,7 +11,6 @@ namespace CargoSync.DataAccess.Data
         }
 
         public DbSet<Delivery> Deliveries { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Delivery>()
@@ -29,6 +28,10 @@ namespace CargoSync.DataAccess.Data
                 .Property(d => d.Status)
                 .IsRequired();
 
+            base.OnModelCreating(modelBuilder);
         }
+
+
+
     }
 }

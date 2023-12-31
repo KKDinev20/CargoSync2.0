@@ -30,14 +30,14 @@
                 <ul class="menu-links">
                     <li class="nav-link">
                         <a href="~/">
-                            <i class='bx bx-home-alt icon'></i>
+                            <i class='bx bxs-dashboard icon'></i>
                             <span class="text nav-text">Dashboard</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a asp-controller="CargoManagement" asp-action="Index">
-                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <i class='bx bxs-package icon'></i>
                             <span class="text nav-text">Cargo Management</span>
                         </a>
                     </li>
@@ -70,7 +70,9 @@
 
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src ="~/js/site.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js" integrity="sha256-qSIshlknROr4J8GMHRlW3fGKrPki733tLq+qeMCR05Q=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="~/js/site.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

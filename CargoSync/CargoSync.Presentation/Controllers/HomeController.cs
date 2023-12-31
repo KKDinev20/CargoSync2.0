@@ -1,11 +1,9 @@
-﻿using CargoSync.DataAccess.Models; // Import the necessary namespace
-using CargoSync.Business.Services; // Import the necessary namespace
+﻿using CargoSync.DataAccess.Models;
+using CargoSync.Business.Services; 
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
-
 public class HomeController : Controller
 {
-    private readonly IDeliveryService _deliveryService;
+    private  IDeliveryService _deliveryService;
 
     public HomeController(IDeliveryService deliveryService)
     {
@@ -14,8 +12,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-
         List<Delivery> recentOrders = _deliveryService.GetRecentOrders(5);
+
 
         int newPackagesCount = _deliveryService.GetNewPackagesCount();
         int inTransitCount = _deliveryService.GetInTransitPackagesCount();
@@ -27,4 +25,6 @@ public class HomeController : Controller
 
         return View(recentOrders);
     }
+
+
 }

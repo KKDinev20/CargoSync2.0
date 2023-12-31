@@ -78,3 +78,12 @@ C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev2
 C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Presentation\bin\Debug\net7.0\CargoSync.Business.pdb
 C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Presentation\bin\Debug\net7.0\CargoSync.DataAccess.pdb
 C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Presentation\obj\Debug\net7.0\CargoSync.Presentation.csproj.CopyComplete
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Presentation\bin\Debug\net7.0\Chart.Mvc.dll
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Presentation\bin\Debug\net7.0\System.Web.Mvc.dll
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Presentation\bin\Debug\net7.0\System.Web.Razor.dll
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Presentation\bin\Debug\net7.0\System.Web.Helpers.dll
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Presentation\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Presentation\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Presentation\bin\Debug\net7.0\System.Web.WebPages.dll
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Presentation\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
+C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Presentation\bin\Debug\net7.0\Newtonsoft.Json.dll

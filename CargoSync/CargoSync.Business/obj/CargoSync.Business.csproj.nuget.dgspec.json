@@ -48,6 +48,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Chart.Mvc": {
+              "target": "Package",
+              "version": "[1.0.0.2, )"
+            },
+            "Chart.js": {
+              "target": "Package",
+              "version": "[3.7.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -123,6 +131,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Chart.Mvc": {
+              "target": "Package",
+              "version": "[1.0.0.2, )"
+            },
+            "Chart.js": {
+              "target": "Package",
+              "version": "[3.7.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.0, )"
