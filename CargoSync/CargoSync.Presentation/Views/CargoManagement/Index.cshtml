@@ -1,23 +1,46 @@
-﻿@{
+﻿@model List<CargoSync.DataAccess.Models.Cargo>
+
+@{
     ViewData["Title"] = "CargoSync";
 }
 
+<h2>Cargo Management</h2>
+
 <section class="dashboard">
     <div class="dash-content">
-        <div class="overview">
+        <div class="activity">
             <div class="title">
-                <span class="text">Dashboard</span>
+                <span class="text">Cargo Details</span>
             </div>
-            <div class="boxes">
-                <div class="box box1">
-                    <span class="text">New Packages</span>
-                </div>
-                <div class="box box2">
-                    <span class="text">In Transit</span>
-                </div>
-                <div class="box box3">
-                    <span class="text">Delivered</span>
-                </div>
+            <div class="activity-data">
+                <canvas id="cargoChart"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                    var cargoNames = @Html.Raw(Json.Serialize(Model.Select(c => c.Description).ToList()));
+                    var cargoQuantities = @Html.Raw(Json.Serialize(Model.Select(c => c.Quantity).ToList()));
+
+                    var ctx = document.getElementById('cargoChart').getContext('2d');
+                    var cargoChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: cargoNames,
+                            datasets: [{
+                                label: 'Cargo Quantities',
+                                data: cargoQuantities,
+                                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
+                </script>
             </div>
         </div>
     </div>

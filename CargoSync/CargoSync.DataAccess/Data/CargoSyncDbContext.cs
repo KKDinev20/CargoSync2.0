@@ -1,4 +1,5 @@
-﻿using CargoSync.DataAccess.Models;
+﻿// CargoSync.DataAccess.Data.CargoSyncDbContext
+using CargoSync.DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace CargoSync.DataAccess.Data
@@ -11,6 +12,8 @@ namespace CargoSync.DataAccess.Data
         }
 
         public DbSet<Delivery> Deliveries { get; set; }
+        public DbSet<Cargo> Cargos { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Delivery>()
@@ -28,10 +31,18 @@ namespace CargoSync.DataAccess.Data
                 .Property(d => d.Status)
                 .IsRequired();
 
+            modelBuilder.Entity<Cargo>()
+                .HasKey(c => c.CargoID);
+
+            modelBuilder.Entity<Cargo>()
+                .Property(c => c.Description)
+                .IsRequired();
+
+            modelBuilder.Entity<Cargo>()
+                .Property(c => c.Quantity)
+                .IsRequired();
+
             base.OnModelCreating(modelBuilder);
         }
-
-
-
     }
 }

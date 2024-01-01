@@ -1,6 +1,8 @@
 using CargoSync.Business.Services;
 using CargoSync.DataAccess.Data;
 using CargoSync.DataAccess.Data.Repositories;
+using CargoSync.DataAccess.Models;
+using CargoSync.DataAccess.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace CargoSync.Presentation
@@ -21,6 +23,8 @@ namespace CargoSync.Presentation
             // Add the service registration for IDeliveryService
             builder.Services.AddScoped<IDeliveryRepository, DeliveryRepository>();
             builder.Services.AddScoped<IDeliveryService, DeliveryService>();
+            builder.Services.AddScoped<ICargoService, CargoService>();
+            builder.Services.AddScoped<ICargoRepository, CargoRepository>();
 
             var app = builder.Build();
 

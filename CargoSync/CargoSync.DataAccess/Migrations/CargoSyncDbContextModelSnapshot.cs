@@ -21,6 +21,29 @@ namespace CargoSync.DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("CargoSync.DataAccess.Models.Cargo", b =>
+                {
+                    b.Property<int>("CargoID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CargoID"));
+
+                    b.Property<int>("DeliveryID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("CargoID");
+
+                    b.ToTable("Cargos");
+                });
+
             modelBuilder.Entity("CargoSync.DataAccess.Models.Delivery", b =>
                 {
                     b.Property<int>("DeliveryID")

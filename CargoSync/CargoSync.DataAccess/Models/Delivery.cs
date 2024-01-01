@@ -13,7 +13,5 @@ namespace CargoSync.DataAccess.Models
         public string ETA { get; set; }
         public string Status { get; set; }
 
-        public List<Revenue> Revenues { get; set; }
-
     }
 }

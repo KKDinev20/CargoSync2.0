@@ -1,14 +1,20 @@
-﻿using CargoSync.Presentation.Models;
+﻿using CargoSync.Business.Services;
+using CargoSync.DataAccess.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
-namespace CargoSync.Presentation.Controllers
+public class CargoManagementController : Controller
 {
-    public class CargoManagementController : Controller
+    private readonly ICargoService _cargoService;
+
+    public CargoManagementController(ICargoService cargoService)
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        _cargoService = cargoService;
+    }
+
+    public IActionResult Index()
+    {
+        List<Cargo> cargos = _cargoService.GetAllCargo();
+
+        return View(cargos);
     }
 }

@@ -233,9 +233,8 @@ body.dark .home .text {
     position: relative;
     left: 260px;
     background-color: var(--panel-color);
-    min-height: 100vh;
-    width: calc(100% - 250px);
-    padding: 20px 35px;
+    width: calc(100% - 260px);
+    padding: 20px 25px;
     transition: var(--tran-05);
 }
 
@@ -494,6 +493,10 @@ thead th {
     background-color: #d5d1defe;
     cursor: pointer;
     text-transform: capitalize;
+}
+
+.chart-container {
+    height: 100%;
 }
 
 
