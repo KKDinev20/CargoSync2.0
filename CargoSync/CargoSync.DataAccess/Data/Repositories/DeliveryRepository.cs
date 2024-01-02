@@ -1,4 +1,5 @@
 ﻿using CargoSync.DataAccess.Data;
+using CargoSync.DataAccess.Data.Interfaces;
 using CargoSync.DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;

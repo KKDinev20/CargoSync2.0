@@ -1,9 +1,9 @@
 ﻿using CargoSync.DataAccess.Models;
 using System.Collections.Generic;
 
-namespace CargoSync.DataAccess.Repositories
+namespace CargoSync.Business.Interfaces
 {
-    public interface ICargoRepository
+    public interface ICargoService
     {
         List<Cargo> GetAllCargo();
     }

@@ -1,6 +1,7 @@
 ﻿using CargoSync.DataAccess.Models;
 using System.Collections.Generic;
-using CargoSync.DataAccess.Repositories;
+using CargoSync.Business.Interfaces;
+using CargoSync.DataAccess.Data.Interfaces;
 
 namespace CargoSync.Business.Services
 {

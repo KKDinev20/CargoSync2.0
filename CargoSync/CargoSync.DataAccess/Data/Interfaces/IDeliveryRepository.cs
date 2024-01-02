@@ -1,6 +1,6 @@
 ﻿using CargoSync.DataAccess.Models;
 
-namespace CargoSync.DataAccess.Data.Repositories
+namespace CargoSync.DataAccess.Data.Interfaces
 {
     public interface IDeliveryRepository
     {

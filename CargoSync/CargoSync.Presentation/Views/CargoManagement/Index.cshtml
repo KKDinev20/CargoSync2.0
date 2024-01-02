@@ -1,4 +1,4 @@
-﻿@model List<CargoSync.DataAccess.Models.Cargo>
+﻿@model CargoManagementViewModel
 
 @{
     ViewData["Title"] = "CargoSync";
@@ -16,8 +16,8 @@
                 <canvas id="cargoChart"></canvas>
                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                 <script>
-                    var cargoNames = @Html.Raw(Json.Serialize(Model.Select(c => c.Description).ToList()));
-                    var cargoQuantities = @Html.Raw(Json.Serialize(Model.Select(c => c.Quantity).ToList()));
+                    var cargoNames = @Html.Raw(Json.Serialize(Model.Cargos.Select(c => c.Description).ToList()));
+                    var cargoQuantities = @Html.Raw(Json.Serialize(Model.Cargos.Select(c => c.Quantity).ToList()));
 
                     var ctx = document.getElementById('cargoChart').getContext('2d');
                     var cargoChart = new Chart(ctx, {
@@ -43,5 +43,74 @@
                 </script>
             </div>
         </div>
+
+        <div class="activity">
+            <div class="title">
+                <span class="text">Revenue Over Time</span>
+            </div>
+            <div class="activity-data">
+                <canvas id="revenueChart"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                    var revenueMonths = @Html.Raw(Json.Serialize(Model.Revenues.Select(r => r.Month).ToList()));
+                    var revenueAmounts = @Html.Raw(Json.Serialize(Model.Revenues.Select(r => r.Amount).ToList()));
+
+                    var ctx = document.getElementById('revenueChart').getContext('2d');
+                    var revenueChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: revenueMonths,
+                            datasets: [{
+                                label: 'Revenue Over Time',
+                                data: revenueAmounts,
+                                fill: false,
+                                borderColor: 'rgba(255, 99, 132, 1)',
+                                borderWidth: 2
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                x: {
+                                    type: 'category'
+                                },
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+
+
+        <div class="activity">
+            <div class="title">
+                <span class="text">User Information</span>
+            </div>
+            <div class="activity-data">
+                <table class="table">
+                    <tbody>
+                        <tr class="row-header">
+                            <td><span class="data-title">UserID</span></td>
+                            <td><span class="data-title">DeliveryID</span></td>
+                            <td><span class="data-title">UserName</span></td>
+                            <td><span class="data-title">UserType</span></td>
+                        </tr>
+
+                        @foreach (var user in Model.Users)
+                        {
+                            <tr class="row">
+                                <td><span class="data-title">@user.UserID</span></td>
+                                <td><span class="data-title">@user.DeliveryID</span></td>
+                                <td><span class="data-title">@user.UserName</span></td>
+                                <td><span class="data-title">@user.UserType</span></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
     </div>
 </section>

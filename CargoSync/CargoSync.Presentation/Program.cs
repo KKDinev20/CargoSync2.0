@@ -1,5 +1,7 @@
+using CargoSync.Business.Interfaces;
 using CargoSync.Business.Services;
 using CargoSync.DataAccess.Data;
+using CargoSync.DataAccess.Data.Interfaces;
 using CargoSync.DataAccess.Data.Repositories;
 using CargoSync.DataAccess.Models;
 using CargoSync.DataAccess.Repositories;
@@ -23,8 +25,15 @@ namespace CargoSync.Presentation
             // Add the service registration for IDeliveryService
             builder.Services.AddScoped<IDeliveryRepository, DeliveryRepository>();
             builder.Services.AddScoped<IDeliveryService, DeliveryService>();
+
             builder.Services.AddScoped<ICargoService, CargoService>();
             builder.Services.AddScoped<ICargoRepository, CargoRepository>();
+
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<IUserService, UserService>();
+
+            builder.Services.AddScoped<IRevenueRepository, RevenueRepository>();
+            builder.Services.AddScoped<IRevenueService, RevenueService>();
 
             var app = builder.Build();
 

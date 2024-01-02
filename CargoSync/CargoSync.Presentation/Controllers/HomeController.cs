@@ -1,6 +1,6 @@
 ﻿using CargoSync.DataAccess.Models;
-using CargoSync.Business.Services; 
 using Microsoft.AspNetCore.Mvc;
+using CargoSync.Business.Interfaces;
 public class HomeController : Controller
 {
     private  IDeliveryService _deliveryService;

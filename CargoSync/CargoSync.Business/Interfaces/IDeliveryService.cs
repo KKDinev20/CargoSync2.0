@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace CargoSync.Business.Services
+namespace CargoSync.Business.Interfaces
 {
     public interface IDeliveryService
     {

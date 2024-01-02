@@ -2,9 +2,10 @@
 using System.Linq;
 using System.Threading.Tasks;
 using CargoSync.DataAccess.Models;
-using CargoSync.DataAccess.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using CargoSync.DataAccess.Data;
+using CargoSync.Business.Interfaces;
+using CargoSync.DataAccess.Data.Interfaces;
 
 namespace CargoSync.Business.Services
 {
