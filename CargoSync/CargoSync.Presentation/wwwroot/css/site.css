@@ -499,6 +499,26 @@ thead th {
     height: 100%;
 }
 
+.pagination-buttons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.pagination-buttons button {
+    background-color: var(--primary-color);
+    color: var(--sidebar-color);
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: var(--tran-03);
+}
+
+.pagination-buttons button:hover {
+    background-color: var(--primary-color-light);
+    color: var(--sidebar-color);
+}
 
 @media (max-width: 1000px) {
     .activity .activity-data {

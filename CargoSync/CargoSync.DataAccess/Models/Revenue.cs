@@ -9,7 +9,6 @@ namespace CargoSync.DataAccess.Models
     public class Revenue
     {
         public int RevenueID { get; set; }
-        public int DeliveryID { get; set; }
         public decimal Amount { get; set; }
         public string Month { get; set; }
     }
