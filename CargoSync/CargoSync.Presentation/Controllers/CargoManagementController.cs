@@ -16,19 +16,27 @@ public class CargoManagementController : Controller
         _userService = userService;
     }
 
-    public async Task<IActionResult> Index()
+
+    public async Task<IActionResult> Index(int page = 1)
     {
-        List<Cargo> cargos = _cargoService.GetAllCargo(); 
+        const int PageSize = 10;
+
+        List<Cargo> cargos = _cargoService.GetAllCargo();
 
         List<Revenue> revenues = await _revenueService.GetRevenues();
+
         List<User> users = await _userService.GetUsersAsync();
+        var paginatedUsers = users.Skip((page - 1) * PageSize).Take(PageSize).ToList();
 
         var viewModel = new CargoManagementViewModel
         {
             Cargos = cargos,
             Revenues = revenues,
-            Users = users
+            Users = paginatedUsers
         };
+
+        ViewBag.CurrentPage = page;
+        ViewBag.TotalPages = (int)Math.Ceiling((double)users.Count / PageSize);
 
         return View(viewModel);
     }

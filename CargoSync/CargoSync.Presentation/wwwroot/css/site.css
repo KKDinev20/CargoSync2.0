@@ -11,7 +11,7 @@
     /* ===== Colors ===== */
     --body-color: #121112;
     --sidebar-color: #1E1E1E;
-    --primary-color: #93257D;
+    --primary-color: #911215;
     --toggle-color: #DDD;
     --text-color: #c1b9b9;
     --tran-03: all 0.2s ease;
@@ -294,7 +294,7 @@ body.dark .home .text {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 20px; /* Added margin for better spacing */
+    margin-top: 20px; 
 }
 
     .dash-content .boxes .box {
@@ -504,7 +504,7 @@ thead th {
     margin-top: 10px;
 }
 
-.pagination-buttons button {
+.pagination-buttons a {
     background-color: var(--primary-color);
     color: var(--sidebar-color);
     border: none;
@@ -512,10 +512,16 @@ thead th {
     padding: 8px 16px;
     margin-right: 10px;
     cursor: pointer;
+    text-decoration: none;
     transition: var(--tran-03);
 }
 
 .pagination-buttons button:hover {
+    background-color: var(--primary-color-light);
+    color: var(--sidebar-color);
+}
+
+.pagination-buttons .active {
     background-color: var(--primary-color-light);
     color: var(--sidebar-color);
 }
