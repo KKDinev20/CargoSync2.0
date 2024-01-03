@@ -103,7 +103,7 @@ header .image-text .name {
     font-weight: 600;
 }
 
-header .image-text .profession {
+header .image-text .description {
     font-size: 16px;
     margin-top: -2px;
     display: block;

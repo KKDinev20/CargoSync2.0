@@ -4,7 +4,6 @@ using CargoSync.DataAccess.Data;
 using CargoSync.DataAccess.Data.Interfaces;
 using CargoSync.DataAccess.Data.Repositories;
 using CargoSync.DataAccess.Models;
-using CargoSync.DataAccess.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace CargoSync.Presentation

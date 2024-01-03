@@ -4,7 +4,7 @@ using CargoSync.DataAccess.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CargoSync.DataAccess.Repositories
+namespace CargoSync.DataAccess.Data.Repositories
 {
     public class CargoRepository : ICargoRepository
     {

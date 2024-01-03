@@ -19,7 +19,7 @@
 
                 <div class="text logo-text">
                     <span class="name">CargoSync</span>
-                    <span class="profession">Deliveries Tracking</span>
+                    <span class="description">Deliveries Tracking</span>
                 </div>
             </div>
         </header>
@@ -36,18 +36,18 @@
                     </li>
 
                     <li class="nav-link">
-                        <a asp-controller="CargoManagement" asp-action="Index">
+                        <a asp-controller="CargoGraphs" asp-action="Index">
                             <i class='bx bxs-package icon'></i>
-                            <span class="text nav-text">Cargo Management</span>
+                            <span class="text nav-text">Cargo Graphs</span>
                         </a>
                     </li>
 
 
 
                     <li class="nav-link">
-                        <a href="@Url.Action("Index", "Settings")">
-                            <i class='bx bx-cog icon'></i>
-                            <span class="text nav-text">Settings</span>
+                        <a href="@Url.Action("Index", "DeliveryManagement")">
+                            <i class='bx bxs-truck icon'></i>
+                            <span class="text nav-text">Manage Deliveries</span>
                         </a>
                     </li>
 
