@@ -1,7 +1,7 @@
 ﻿@model CargoGraphsViewModel
 
 @{
-    ViewData["Title"] = "CargoSync";
+    ViewData["Title"] = "Cargo Graphs";
 }
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -28,6 +28,7 @@
                                 label: 'Cargo Quantities',
                                 data: cargoQuantities,
                                 backgroundColor: getRedGradient(ctx),
+                                titleFontFamily: 'Lexend Deca',
                             }]
                         },
                         options: {
@@ -65,6 +66,10 @@
 
                     var ctx = document.getElementById('revenueChart').getContext('2d');
 
+                    var gradient = ctx.createLinearGradient(0, 0, 0, 400); 
+                    gradient.addColorStop(0, 'rgba(145, 18, 21, 0.8)'); 
+                    gradient.addColorStop(1, 'rgba(145, 18, 21, 0)');
+
                     var revenueChart = new Chart(ctx, {
                         type: 'line',
                         data: {
@@ -75,6 +80,10 @@
                                 borderWidth: 1,
                                 borderColor: '#911215',
                                 data: revenueAmounts,
+                                fill: {
+                                    target: 'origin',
+                                    above: gradient, 
+                                }
                             }]
                         },
                         options: {
@@ -90,7 +99,7 @@
                                     display: false
                                 },
                                 tooltip: {
-                                    titleFontFamily: 'Open Sans',
+                                    titleFontFamily: 'Lexend Deca',
                                     backgroundColor: 'rgba(0,0,0,0.3)',
                                     titleFontColor: 'red',
                                     caretSize: 5,
@@ -104,6 +113,7 @@
                 </script>
             </div>
         </div>
+
 
         <!-- User Information -->
         <div class="activity">

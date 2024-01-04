@@ -12,6 +12,7 @@
     --body-color: #121112;
     --sidebar-color: #1E1E1E;
     --primary-color: #911215;
+    --primary-color-light: #d12126;
     --toggle-color: #DDD;
     --text-color: #c1b9b9;
     --tran-03: all 0.2s ease;
@@ -506,7 +507,7 @@ thead th {
 
 .pagination-buttons a {
     background-color: var(--primary-color);
-    color: var(--sidebar-color);
+    color: var(--text-color);
     border: none;
     border-radius: 6px;
     padding: 8px 16px;
@@ -516,14 +517,9 @@ thead th {
     transition: var(--tran-03);
 }
 
-.pagination-buttons button:hover {
-    background-color: var(--primary-color-light);
-    color: var(--sidebar-color);
-}
-
 .pagination-buttons .active {
     background-color: var(--primary-color-light);
-    color: var(--sidebar-color);
+    color: var(--text-color);
 }
 
 @media (max-width: 1000px) {

@@ -1,6 +1,4 @@
 ﻿using CargoSync.DataAccess.Models;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace CargoSync.Business.Interfaces
 {
@@ -11,6 +9,6 @@ namespace CargoSync.Business.Interfaces
         int GetNewPackagesCount();
         int GetInTransitPackagesCount();
         int GetDeliveredPackagesCount();
-
+        List<Delivery> GetOrders();
     }
 }

@@ -7,5 +7,7 @@ namespace CargoSync.Presentation.Models
         public List<Cargo> Cargos { get; set; }
         public List<Revenue> Revenues { get; set; }
         public List<User> Users { get; set; }
+        public List<Delivery> Deliveries { get; set; }
+
     }
 }

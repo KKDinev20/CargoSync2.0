@@ -20,16 +20,18 @@ namespace CargoSync.Business.Services
             _dbContext = dbContext;
         }
 
-        public async Task<List<Delivery>> GetRecentDeliveriesAsync()
-        {
-            return await _deliveryRepository.GetRecentDeliveriesAsync();
-        }
-
         public List<Delivery> GetRecentOrders(int count)
         {
             return _dbContext.Deliveries
                 .OrderByDescending(d => d.DeliveryID)
                 .Take(count)
+                .ToList();
+        }
+
+        public List<Delivery> GetOrders()
+        {
+            return _dbContext.Deliveries
+                .OrderByDescending(d => d.DeliveryID)
                 .ToList();
         }
 

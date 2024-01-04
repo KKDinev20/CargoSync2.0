@@ -1,8 +1,68 @@
-﻿@{
-    Layout = "_Layout";
-}
+﻿@model List<CargoSync.DataAccess.Models.Delivery>
 
-<div class="title">
-    <span class="text">Dashboard</span>
+<h2>Manage Deliveries</h2>
+
+<div class="dashboard">
+    <div class="dash-content">
+        <div class="activity">
+            <div class="title">
+                <span class="text">Deliveries</span>
+            </div>
+            <div class="activity-data">
+                <table class="table">
+                    <tbody>
+                        <tr class="row-header">
+                            <td><span class="data-title">DeliveryID</span></td>
+                            <td><span class="data-title">Destination</span></td>
+                            <td><span class="data-title">ETA</span></td>
+                            <td><span class="data-title">Status</span></td>
+                        </tr>
+
+                        @foreach (var delivery in Model)
+                        {
+                            <tr class="row">
+                                <td><span class="data-title">@delivery.DeliveryID</span></td>
+                                <td><span class="data-title">@delivery.Destination</span></td>
+                                <td><span class="data-title">@delivery.ETA</span></td>
+                                <td class="@GetStatusClass(delivery.Status)"><span class="data-title">@delivery.Status</span></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="pagination-buttons">
+            <a class="pagination-button">Page @(ViewBag.CurrentPage) of @(ViewBag.TotalPages)</a>
+            @if (ViewBag.CurrentPage > 1)
+            {
+                <a class="pagination-button" href="@Url.Action("Index", new { page = ViewBag.CurrentPage - 1 })">Previous</a>
+            }
+            @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+            {
+                <a class="pagination-button" href="@Url.Action("Index", new { page = ViewBag.CurrentPage + 1 })">Next</a>
+            }
+        </div>
+
+        <p>
+            <a asp-action="Create">Create New</a>
+        </p>
+    </div>
 </div>
-<!-- Add more content specific to the Settings page -->
+
+@functions {
+    string GetStatusClass(string status)
+    {
+        switch (status)
+        {
+            case "Delayed":
+                return "text-delayed";
+            case "On going":
+                return "text-ongoing";
+            case "Finished":
+                return "text-finished";
+            default:
+                return "";
+        }
+    }
+}

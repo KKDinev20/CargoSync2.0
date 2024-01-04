@@ -5,9 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 
 public class CargoGraphsController : Controller
 {
-    private readonly ICargoService _cargoService;
-    private readonly IRevenueService _revenueService;
-    private readonly IUserService _userService;
+    private  ICargoService _cargoService;
+    private  IRevenueService _revenueService;
+    private  IUserService _userService;
 
     public CargoGraphsController(ICargoService cargoService, IRevenueService revenueService, IUserService userService)
     {

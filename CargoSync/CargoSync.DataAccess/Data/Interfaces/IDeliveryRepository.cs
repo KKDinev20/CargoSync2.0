@@ -1,9 +1,9 @@
 ﻿using CargoSync.DataAccess.Models;
 
-namespace CargoSync.DataAccess.Data.Interfaces
+public interface IDeliveryRepository
 {
-    public interface IDeliveryRepository
-    {
-        Task<List<Delivery>> GetRecentDeliveriesAsync();
-    }
+    List<Delivery> GetDeliveries(int page, int pageSize);
+    int GetTotalDeliveriesCount();
+    void AddDelivery(Delivery delivery);
+    void RemoveDelivery(int deliveryId);
 }
