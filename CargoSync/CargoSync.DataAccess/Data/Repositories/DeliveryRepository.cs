@@ -24,16 +24,20 @@ public class DeliveryRepository : IDeliveryRepository
         return _context.Deliveries.Count();
     }
 
+    public Delivery GetDeliveryById(int id)
+    {
+        return _context.Deliveries.Find(id);
+    }
+
     public void AddDelivery(Delivery delivery)
     {
-        _context.Deliveries.Add(delivery);
+        _context.Deliveries.Update(delivery);
         _context.SaveChanges();
     }
 
-    public void RemoveDelivery(int deliveryId)
+    public void RemoveDelivery(int id)
     {
-        var delivery = _context.Deliveries.Find(deliveryId);
-
+        var delivery = _context.Deliveries.Find(id);
         if (delivery != null)
         {
             _context.Deliveries.Remove(delivery);

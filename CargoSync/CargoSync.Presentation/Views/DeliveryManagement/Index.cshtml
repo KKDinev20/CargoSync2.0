@@ -24,7 +24,7 @@
                                 <td><span class="data-title">@delivery.DeliveryID</span></td>
                                 <td><span class="data-title">@delivery.Destination</span></td>
                                 <td><span class="data-title">@delivery.ETA</span></td>
-                                <td class="@GetStatusClass(delivery.Status)"><span class="data-title">@delivery.Status</span></td>
+                                <td><span class="data-title">@delivery.Status</span></td>
                             </tr>
                         }
                     </tbody>
@@ -45,24 +45,8 @@
         </div>
 
         <p>
-            <a asp-action="Create">Create New</a>
+            <a asp-controller="DeliveryManagement" asp-action="Create">Create New</a>
         </p>
+
     </div>
 </div>
-
-@functions {
-    string GetStatusClass(string status)
-    {
-        switch (status)
-        {
-            case "Delayed":
-                return "text-delayed";
-            case "On going":
-                return "text-ongoing";
-            case "Finished":
-                return "text-finished";
-            default:
-                return "";
-        }
-    }
-}

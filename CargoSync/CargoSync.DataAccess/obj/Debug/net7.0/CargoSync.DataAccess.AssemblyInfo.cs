@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CargoSync.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2f541fad1302939069f8b67e092b48d1d0ae171")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7435a396d0f1cc3c068d73603102de21a2076f5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CargoSync.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CargoSync.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

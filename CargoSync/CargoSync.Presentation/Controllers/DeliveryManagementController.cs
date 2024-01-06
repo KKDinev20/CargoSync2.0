@@ -27,26 +27,7 @@ namespace CargoSync.Presentation.Controllers
 
         public IActionResult Create()
         {
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult Create(Delivery delivery)
-        {
-            if (ModelState.IsValid)
-            {
-                _deliveryRepository.AddDelivery(delivery);
-                return RedirectToAction(nameof(Index));
-            }
-
-            return View(delivery);
-        }
-
-        [HttpPost]
-        public IActionResult Remove(int id)
-        {
-            _deliveryRepository.RemoveDelivery(id);
-            return RedirectToAction(nameof(Index));
+            return View("Create");
         }
     }
 }

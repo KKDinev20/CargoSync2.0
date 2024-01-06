@@ -4,6 +4,7 @@ using CargoSync.DataAccess.Data;
 using CargoSync.DataAccess.Data.Interfaces;
 using CargoSync.DataAccess.Data.Repositories;
 using CargoSync.DataAccess.Models;
+using CargoSync.Presentation.Controllers;
 using Microsoft.EntityFrameworkCore;
 
 namespace CargoSync.Presentation
@@ -40,7 +41,6 @@ namespace CargoSync.Presentation
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
@@ -54,6 +54,10 @@ namespace CargoSync.Presentation
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
+
+            app.MapControllerRoute(
+                name: "delivery",
+                pattern: "{controller=DeliveryManagement}/{action=Index}/{id?}");
 
             app.Run();
         }
