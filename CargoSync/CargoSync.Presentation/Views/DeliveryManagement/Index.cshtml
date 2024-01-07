@@ -16,6 +16,7 @@
                             <td><span class="data-title">Destination</span></td>
                             <td><span class="data-title">ETA</span></td>
                             <td><span class="data-title">Status</span></td>
+                            <td><span class="data-title">Actions</span></td>
                         </tr>
 
                         @foreach (var delivery in Model)
@@ -25,6 +26,11 @@
                                 <td><span class="data-title">@delivery.Destination</span></td>
                                 <td><span class="data-title">@delivery.ETA</span></td>
                                 <td><span class="data-title">@delivery.Status</span></td>
+                                <td>
+                                    <span class="data-title">
+                                    <a asp-action="Delete" asp-route-id="@delivery.DeliveryID" class="btn btn-danger">Remove</a>
+                                    </span>
+                                </td>
                             </tr>
                         }
                     </tbody>
@@ -45,7 +51,7 @@
         </div>
 
         <p>
-            <a asp-controller="DeliveryManagement" asp-action="Create">Create New</a>
+            <a asp-action="Create" class="create-button">Create New</a>
         </p>
 
     </div>

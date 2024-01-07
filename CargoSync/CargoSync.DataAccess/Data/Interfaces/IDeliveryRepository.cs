@@ -1,12 +1,16 @@
-﻿using CargoSync.DataAccess.Models;
+﻿// In DataAccess.Data.Repositories namespace
+using CargoSync.DataAccess.Models;
+using System.Collections.Generic;
 
-public interface IDeliveryRepository
+namespace CargoSync.DataAccess.Data.Repositories
 {
-    List<Delivery> GetDeliveries(int page, int pageSize);
-    int GetTotalDeliveriesCount();
-    Delivery GetDeliveryById(int id);
-
-    void AddDelivery(Delivery delivery);
-
-    void RemoveDelivery(int id);
+    public interface IDeliveryRepository
+    {
+        List<Delivery> GetDeliveries(int page, int pageSize);
+        int GetTotalDeliveriesCount();
+        Delivery GetDeliveryById(int id);
+        void AddDelivery(Delivery delivery);
+        void DeleteDelivery(int id);
+        void UpdateDeliveryIds();
+    }
 }

@@ -1,6 +1,7 @@
-﻿using CargoSync.DataAccess.Models;
+﻿using CargoSync.DataAccess.Data.Repositories;
+using CargoSync.DataAccess.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
+using System;
 
 namespace CargoSync.Presentation.Controllers
 {
@@ -28,6 +29,40 @@ namespace CargoSync.Presentation.Controllers
         public IActionResult Create()
         {
             return View("Create");
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Delivery delivery)
+        {
+            if (ModelState.IsValid)
+            {
+                _deliveryRepository.AddDelivery(delivery);
+                return RedirectToAction(nameof(Index));
+            }
+
+            // If the model is not valid, return to the Create view with the validation errors.
+            return View("Create", delivery);
+        }
+
+        public IActionResult Delete(int id)
+        {
+            var delivery = _deliveryRepository.GetDeliveryById(id);
+
+            if (delivery == null)
+            {
+                return NotFound();
+            }
+
+            return View(delivery);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            _deliveryRepository.DeleteDelivery(id);
+            return RedirectToAction(nameof(Index));
         }
     }
 }

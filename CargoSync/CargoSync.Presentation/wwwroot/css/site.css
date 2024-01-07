@@ -522,10 +522,21 @@ thead th {
     color: var(--text-color);
 }
 
-.delivery-form
-{
-
+.create-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--tran-03);
 }
+
+    .create-button:hover {
+        background-color: var(--primary-color-light);
+    }
+
 
 .create-form {
     max-width: 400px;
@@ -578,7 +589,7 @@ thead th {
 }
 
 .create-form button:hover {
-    background-color: #102770;
+    background-color: var(--primary-color);
     color: #ffeba7;
     box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
 }

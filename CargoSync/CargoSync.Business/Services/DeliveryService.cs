@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using CargoSync.DataAccess.Data;
 using CargoSync.Business.Interfaces;
 using CargoSync.DataAccess.Data.Interfaces;
+using CargoSync.DataAccess.Data.Repositories;
 
 namespace CargoSync.Business.Services
 {
