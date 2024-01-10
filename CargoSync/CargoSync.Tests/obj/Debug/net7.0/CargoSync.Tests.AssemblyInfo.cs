@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CargoSync.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ab43116b7902860c7f511bac406ac594e30c38e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CargoSync.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CargoSync.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
