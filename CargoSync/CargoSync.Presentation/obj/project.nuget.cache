@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WlIsHb27nlfwYTmSN9Ti9LRvKH8Ng3kO5FYTZymT50J1SNeRPJuhYENdCWYEgNtpP8tIplQMD2nS4vpI2FIyzw==",
+  "dgSpecHash": "ZwSrzO/hHH6/IKjMVuywHy0zU3NYBczcw8AJx+aujD7em8y4HUWPK9HUK5iXPyVtxe4JjNBGLbAeGhWsFAHVWQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\CargoSync.Presentation.csproj",
   "expectedPackageFiles": [
@@ -48,7 +48,9 @@
     "C:\\Users\\NITRO 5\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\NITRO 5\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\NITRO 5\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\NITRO 5\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\NITRO 5\\.nuget\\packages\\newtonsoft.json\\6.0.8\\newtonsoft.json.6.0.8.nupkg.sha512",
+    "C:\\Users\\NITRO 5\\.nuget\\packages\\nunit\\3.13.0\\nunit.3.13.0.nupkg.sha512",
     "C:\\Users\\NITRO 5\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\NITRO 5\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\NITRO 5\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",

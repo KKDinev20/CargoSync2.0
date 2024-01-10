@@ -1,14 +1,12 @@
-﻿using CargoSync.DataAccess.Data;
-using CargoSync.DataAccess.Data.Interfaces;
+﻿using CargoSync.DataAccess.Data.Interfaces;
 using CargoSync.DataAccess.Models;
-using System.Collections.Generic;
-using System.Linq;
+
 
 namespace CargoSync.DataAccess.Data.Repositories
 {
     public class CargoRepository : ICargoRepository
     {
-        private readonly CargoSyncDbContext _context;
+        private CargoSyncDbContext _context;
 
         public CargoRepository(CargoSyncDbContext context)
         {

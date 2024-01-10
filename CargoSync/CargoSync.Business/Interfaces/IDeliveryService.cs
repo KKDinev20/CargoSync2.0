@@ -4,11 +4,11 @@ namespace CargoSync.Business.Interfaces
 {
     public interface IDeliveryService
     {
-        List<Delivery> GetRecentOrders(int count);
+        public List<Delivery> GetRecentOrders(int count);
 
-        int GetNewPackagesCount();
-        int GetInTransitPackagesCount();
-        int GetDeliveredPackagesCount();
-        List<Delivery> GetOrders();
+        public int GetNewPackagesCount();
+        public int GetInTransitPackagesCount();
+        public int GetDeliveredPackagesCount();
+        public List<Delivery> GetOrders();
     }
 }

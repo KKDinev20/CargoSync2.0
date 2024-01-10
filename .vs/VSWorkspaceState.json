@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CargoSync",
+    "\\CargoSync\\CargoSync.DataAccess",
+    "\\CargoSync\\CargoSync.DataAccess\\Models"
   ],
-  "SelectedNode": "\\CargoSync.sln",
+  "SelectedNode": "\\CargoSync\\CargoSync.DataAccess\\Models\\Cargo.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -6,7 +6,7 @@ namespace CargoSync.Business.Services
 {
     public class RevenueService : IRevenueService
     {
-        private readonly IRevenueRepository _revenueRepository;
+        private IRevenueRepository _revenueRepository;
 
         public RevenueService(IRevenueRepository revenueRepository)
         {

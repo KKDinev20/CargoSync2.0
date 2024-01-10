@@ -6,7 +6,7 @@ namespace CargoSync.Business.Services
 {
     public class UserService : IUserService
     {
-        private readonly IUserRepository _userRepository;
+        private IUserRepository _userRepository;
 
         public UserService(IUserRepository userRepository)
         {

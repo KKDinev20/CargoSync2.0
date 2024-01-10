@@ -1,5 +1,4 @@
-﻿// CargoSync.DataAccess.Data.CargoSyncDbContext
-using CargoSync.DataAccess.Models;
+﻿using CargoSync.DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace CargoSync.DataAccess.Data
@@ -20,7 +19,7 @@ namespace CargoSync.DataAccess.Data
         {
             // Delivery entity configuration
             modelBuilder.Entity<Delivery>()
-                .HasKey(d => d.DeliveryID);
+                .HasKey(d => d.DeliveryId);
 
             modelBuilder.Entity<Delivery>()
                 .Property(d => d.Destination)
@@ -36,7 +35,7 @@ namespace CargoSync.DataAccess.Data
 
             // Cargo entity configuration
             modelBuilder.Entity<Cargo>()
-                .HasKey(c => c.CargoID);
+                .HasKey(c => c.CargoId);
 
             modelBuilder.Entity<Cargo>()
                 .Property(c => c.Description)
@@ -48,7 +47,7 @@ namespace CargoSync.DataAccess.Data
 
             // User entity configuration
             modelBuilder.Entity<User>()
-                .HasKey(u => u.UserID);
+                .HasKey(u => u.UserId);
 
             modelBuilder.Entity<User>()
                 .Property(u => u.UserName)
@@ -60,7 +59,7 @@ namespace CargoSync.DataAccess.Data
 
             // Revenue entity configuration
             modelBuilder.Entity<Revenue>()
-                .HasKey(r => r.RevenueID);
+                .HasKey(r => r.RevenueId);
 
             modelBuilder.Entity<Revenue>()
                 .Property(r => r.Amount)

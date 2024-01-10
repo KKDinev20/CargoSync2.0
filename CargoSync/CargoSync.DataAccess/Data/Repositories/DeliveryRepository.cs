@@ -1,13 +1,10 @@
-﻿// In DataAccess.Data.Repositories namespace
-using System.Linq;
-using CargoSync.DataAccess.Data.Repositories;
-using CargoSync.DataAccess.Data;
+﻿using CargoSync.DataAccess.Data;
 using CargoSync.DataAccess.Models;
-using Microsoft.EntityFrameworkCore;
+using CargoSync.DataAccess.Data.Interfaces;
 
 public class DeliveryRepository : IDeliveryRepository
 {
-    private readonly CargoSyncDbContext _dbContext;
+    private CargoSyncDbContext _dbContext;
 
     public DeliveryRepository(CargoSyncDbContext dbContext)
     {
@@ -17,7 +14,7 @@ public class DeliveryRepository : IDeliveryRepository
     public List<Delivery> GetDeliveries(int page, int pageSize)
     {
         return _dbContext.Deliveries
-            .OrderBy(d => d.DeliveryID)
+            .OrderBy(d => d.DeliveryId)
             .Skip((page - 1) * pageSize)
             .Take(pageSize)
             .ToList();
@@ -41,7 +38,7 @@ public class DeliveryRepository : IDeliveryRepository
 
     public void DeleteDelivery(int id)
     {
-        var delivery = _dbContext.Deliveries.Find(id);
+        Delivery delivery = _dbContext.Deliveries.Find(id);
 
         if (delivery != null)
         {
@@ -52,11 +49,11 @@ public class DeliveryRepository : IDeliveryRepository
 
     public void UpdateDeliveryIds()
     {
-        var deliveries = _dbContext.Deliveries.OrderBy(d => d.DeliveryID).ToList();
+        List<Delivery> deliveries = _dbContext.Deliveries.OrderBy(d => d.DeliveryId).ToList();
 
         for (int i = 0; i < deliveries.Count; i++)
         {
-            deliveries[i].DeliveryID = i + 1;
+            deliveries[i].DeliveryId = i + 1;
         }
 
         _dbContext.SaveChanges();

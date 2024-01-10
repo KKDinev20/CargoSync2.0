@@ -43,7 +43,7 @@
                         @foreach (var order in Model)
                         {
                             <tr class="row">
-                                <td><span class="data-title">@order.DeliveryID</span></td>
+                                <td><span class="data-title">@order.DeliveryId</span></td>
                                 <td><span class="data-title">@order.Destination</span></td>
                                 <td><span class="data-title">@order.ETA</span></td>
                                 <td class="@GetStatusClass(order.Status)"><span class="data-title">@order.Status</span></td>

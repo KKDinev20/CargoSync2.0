@@ -1,13 +1,12 @@
-﻿using CargoSync.DataAccess.Data.Repositories;
+﻿using CargoSync.DataAccess.Data.Interfaces;
 using CargoSync.DataAccess.Models;
 using Microsoft.AspNetCore.Mvc;
-using System;
 
 namespace CargoSync.Presentation.Controllers
 {
     public class DeliveryManagementController : Controller
     {
-        private readonly IDeliveryRepository _deliveryRepository;
+        private IDeliveryRepository _deliveryRepository;
         private const int PageSize = 50;
 
         public DeliveryManagementController(IDeliveryRepository deliveryRepository)
@@ -17,8 +16,8 @@ namespace CargoSync.Presentation.Controllers
 
         public IActionResult Index(int page = 1)
         {
-            var deliveries = _deliveryRepository.GetDeliveries(page, PageSize);
-            var totalDeliveriesCount = _deliveryRepository.GetTotalDeliveriesCount();
+            List<Delivery> deliveries = _deliveryRepository.GetDeliveries(page, PageSize);
+            int totalDeliveriesCount = _deliveryRepository.GetTotalDeliveriesCount();
 
             ViewBag.CurrentPage = page;
             ViewBag.TotalPages = (int)Math.Ceiling((double)totalDeliveriesCount / PageSize);
@@ -41,13 +40,12 @@ namespace CargoSync.Presentation.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            // If the model is not valid, return to the Create view with the validation errors.
             return View("Create", delivery);
         }
 
         public IActionResult Delete(int id)
         {
-            var delivery = _deliveryRepository.GetDeliveryById(id);
+            Delivery delivery = _deliveryRepository.GetDeliveryById(id);
 
             if (delivery == null)
             {

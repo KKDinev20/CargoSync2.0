@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using CargoSync.DataAccess.Models;
 
 namespace CargoSync.Presentation.Controllers
@@ -10,13 +9,13 @@ namespace CargoSync.Presentation.Controllers
 
         public ActionResult Index()
         {
-            var deliveries = MockRepository; 
+            List<Delivery> deliveries = MockRepository; 
             return View(deliveries);
         }
 
         public ActionResult Details(int id)
         {
-            var delivery = MockRepository.FirstOrDefault(d => d.DeliveryID == id);
+            Delivery delivery = MockRepository.FirstOrDefault(d => d.DeliveryId == id);
             if (delivery == null)
             {
                 return NotFound();
@@ -38,7 +37,7 @@ namespace CargoSync.Presentation.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    delivery.DeliveryID = MockRepository.Count + 1; 
+                    delivery.DeliveryId = MockRepository.Count + 1; 
                     MockRepository.Add(delivery);
 
                     return RedirectToAction(nameof(Index));
@@ -54,7 +53,7 @@ namespace CargoSync.Presentation.Controllers
 
         public ActionResult Edit(int id)
         {
-            var delivery = MockRepository.FirstOrDefault(d => d.DeliveryID == id);
+            Delivery delivery = MockRepository.FirstOrDefault(d => d.DeliveryId == id);
             if (delivery == null)
             {
                 return NotFound();
@@ -69,7 +68,7 @@ namespace CargoSync.Presentation.Controllers
         {
             try
             {
-                var existingDelivery = MockRepository.FirstOrDefault(d => d.DeliveryID == id);
+                Delivery existingDelivery = MockRepository.FirstOrDefault(d => d.DeliveryId == id);
                 if (existingDelivery == null)
                 {
                     return NotFound();
@@ -89,7 +88,7 @@ namespace CargoSync.Presentation.Controllers
 
         public ActionResult Delete(int id)
         {
-            var delivery = MockRepository.FirstOrDefault(d => d.DeliveryID == id);
+            Delivery delivery = MockRepository.FirstOrDefault(d => d.DeliveryId == id);
             if (delivery == null)
             {
                 return NotFound();
@@ -102,7 +101,7 @@ namespace CargoSync.Presentation.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            var delivery = MockRepository.FirstOrDefault(d => d.DeliveryID == id);
+            Delivery delivery = MockRepository.FirstOrDefault(d => d.DeliveryId == id);
             if (delivery == null)
             {
                 return NotFound();

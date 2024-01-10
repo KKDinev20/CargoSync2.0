@@ -10,3 +10,13 @@ VALUES
     (8, 1100.25, 'April'),
     (9, 1300.75, 'May'),
     (10, 1000.00, 'May');
+
+CREATE TABLE [dbo].[Revenue] (
+    [RevenueID] INT             NOT NULL,
+    [Amount]    DECIMAL (18, 2) NOT NULL,
+    [Month]     NVARCHAR (MAX)  NOT NULL,
+    CONSTRAINT [PK_Revenue] PRIMARY KEY CLUSTERED ([RevenueID] ASC),
+    CONSTRAINT [UQ_Revenue_DeliveryID] UNIQUE NONCLUSTERED ([RevenueID] ASC),
+    CONSTRAINT [FK_Revenue_Deliveries] FOREIGN KEY ([RevenueID]) REFERENCES [dbo].[Deliveries] ([DeliveryID])
+);
+

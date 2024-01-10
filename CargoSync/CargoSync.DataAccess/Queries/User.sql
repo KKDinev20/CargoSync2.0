@@ -11,16 +11,12 @@ VALUES
     (9, 'Ryan Wilson', 'Customer'),
     (10, 'Emma Carter', 'Customer');
 
-DELETE FROM Users
+CREATE TABLE [dbo].[Users] (
+    [UserID]   INT            NOT NULL,
+    [UserName] NVARCHAR (MAX) NOT NULL,
+    [UserType] NVARCHAR (MAX) NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED ([UserID] ASC),
+    CONSTRAINT [UQ_Users_DeliveryID] UNIQUE NONCLUSTERED ([UserID] ASC),
+    CONSTRAINT [FK_Users_Deliveries] FOREIGN KEY ([UserID]) REFERENCES [dbo].[Deliveries] ([DeliveryID]) ON DELETE CASCADE
+);
 
-DECLARE @Counter INT = 1
-
-WHILE @Counter <= 100
-BEGIN
-    INSERT INTO [dbo].[Users] ([UserID], [UserName], [UserType])
-    VALUES
-        (@Counter, 'User' + CAST(@Counter AS NVARCHAR(10)), 
-         CASE WHEN @Counter % 2 = 0 THEN 'Driver' ELSE 'Customer' END)
-
-    SET @Counter = @Counter + 1
-END

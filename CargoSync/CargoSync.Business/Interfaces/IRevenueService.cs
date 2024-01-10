@@ -5,6 +5,6 @@ namespace CargoSync.Business.Interfaces
 {
     public interface IRevenueService
     {
-        Task<List<Revenue>> GetRevenues();
+        public Task<List<Revenue>> GetRevenues();
     }
 }

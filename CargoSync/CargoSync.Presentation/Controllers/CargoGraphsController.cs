@@ -26,9 +26,9 @@ public class CargoGraphsController : Controller
         List<Revenue> revenues = await _revenueService.GetRevenues();
 
         List<User> users = await _userService.GetUsersAsync();
-        var paginatedUsers = users.Skip((page - 1) * PageSize).Take(PageSize).ToList();
+        List<User> paginatedUsers = users.Skip((page - 1) * PageSize).Take(PageSize).ToList();
 
-        var viewModel = new CargoGraphsViewModel
+        CargoGraphsViewModel viewModel = new CargoGraphsViewModel
         {
             Cargos = cargos,
             Revenues = revenues,

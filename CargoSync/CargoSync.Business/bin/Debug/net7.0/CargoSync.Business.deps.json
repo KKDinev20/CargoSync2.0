@@ -13,7 +13,8 @@
           "Chart.js": "3.7.1",
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
-          "Microsoft.EntityFrameworkCore.Tools": "7.0.0"
+          "Microsoft.EntityFrameworkCore.Tools": "7.0.0",
+          "NUnit": "3.13.0"
         },
         "runtime": {
           "CargoSync.Business.dll": {}
@@ -513,11 +514,27 @@
           }
         }
       },
+      "NETStandard.Library/2.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0"
+        }
+      },
       "Newtonsoft.Json/6.0.8": {
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.8.18111"
+          }
+        }
+      },
+      "NUnit/3.13.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/nunit.framework.dll": {
+            "assemblyVersion": "3.13.0.0",
+            "fileVersion": "3.13.0.0"
           }
         }
       },
@@ -751,7 +768,8 @@
           "Chart.Mvc": "1.0.0.2",
           "Chart.js": "3.7.1",
           "Microsoft.EntityFrameworkCore": "7.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
+          "NUnit": "3.13.0"
         },
         "runtime": {
           "CargoSync.DataAccess.dll": {}
@@ -1073,12 +1091,26 @@
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
     },
+    "NETStandard.Library/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+      "path": "netstandard.library/2.0.0",
+      "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
+    },
     "Newtonsoft.Json/6.0.8": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-7ut47NDedTW19EbL0JpFDYUP62fcuz27hJrehCDNajdCS5NtqL+E39+7Um3OkNc2wl2ym7K8Ln5eNuLus6mVGQ==",
       "path": "newtonsoft.json/6.0.8",
       "hashPath": "newtonsoft.json.6.0.8.nupkg.sha512"
+    },
+    "NUnit/3.13.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G+BOONgJKtNtprjGQ54l0m+Vq2VFCMh/H6ljuHfqrRlX6YkNy0GjMd5Nn0NpJidGpRd4gAOJsBqNuxr7Kgc/5g==",
+      "path": "nunit/3.13.0",
+      "hashPath": "nunit.3.13.0.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",

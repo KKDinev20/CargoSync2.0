@@ -1,12 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CargoSync.DataAccess.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using CargoSync.DataAccess.Models;
 using CargoSync.DataAccess.Data;
 using CargoSync.Business.Interfaces;
 using CargoSync.DataAccess.Data.Interfaces;
-using CargoSync.DataAccess.Data.Repositories;
 
 namespace CargoSync.Business.Services
 {
@@ -24,7 +19,7 @@ namespace CargoSync.Business.Services
         public List<Delivery> GetRecentOrders(int count)
         {
             return _dbContext.Deliveries
-                .OrderByDescending(d => d.DeliveryID)
+                .OrderByDescending(d => d.DeliveryId)
                 .Take(count)
                 .ToList();
         }
@@ -32,7 +27,7 @@ namespace CargoSync.Business.Services
         public List<Delivery> GetOrders()
         {
             return _dbContext.Deliveries
-                .OrderByDescending(d => d.DeliveryID)
+                .OrderByDescending(d => d.DeliveryId)
                 .ToList();
         }
 
