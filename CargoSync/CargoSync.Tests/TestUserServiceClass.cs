@@ -1,7 +1,6 @@
 ﻿using CargoSync.Business.Services;
 using CargoSync.DataAccess.Data.Interfaces;
 using CargoSync.DataAccess.Models;
-using Moq;
 
 namespace CargoSync.Tests
 {
