@@ -1,20 +1,24 @@
 ﻿using CargoSync.DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
 
+// Database context class for CargoSync application
 namespace CargoSync.DataAccess.Data
 {
     public class CargoSyncDbContext : DbContext
     {
+        // Constructor to initialize the context with options
         public CargoSyncDbContext(DbContextOptions<CargoSyncDbContext> options)
             : base(options)
         {
         }
 
+        // DbSet properties representing database tables
         public DbSet<Delivery> Deliveries { get; set; }
         public DbSet<Cargo> Cargos { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Revenue> Revenue { get; set; }
 
+        // Method to configure entity relationships and constraints
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Delivery entity configuration
@@ -64,12 +68,13 @@ namespace CargoSync.DataAccess.Data
             modelBuilder.Entity<Revenue>()
                 .Property(r => r.Amount)
                 .IsRequired()
-                .HasPrecision(18, 2); 
+                .HasPrecision(18, 2);
 
             modelBuilder.Entity<Revenue>()
                 .Property(r => r.Month)
                 .IsRequired();
 
+            // Call the base class method
             base.OnModelCreating(modelBuilder);
         }
     }
