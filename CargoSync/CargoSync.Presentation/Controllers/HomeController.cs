@@ -1,19 +1,21 @@
 ﻿using CargoSync.DataAccess.Models;
 using Microsoft.AspNetCore.Mvc;
 using CargoSync.Business.Interfaces;
+using System.Collections.Generic;
+
 public class HomeController : Controller
 {
-    private  IDeliveryService _deliveryService;
+    private readonly IDeliveryService _deliveryService;
 
     public HomeController(IDeliveryService deliveryService)
     {
         _deliveryService = deliveryService;
     }
 
+    // Action method to display the home page with recent delivery orders and package counts
     public IActionResult Index()
     {
         List<Delivery> recentOrders = _deliveryService.GetRecentOrders(5);
-
 
         int newPackagesCount = _deliveryService.GetNewPackagesCount();
         int inTransitCount = _deliveryService.GetInTransitPackagesCount();
@@ -25,6 +27,4 @@ public class HomeController : Controller
 
         return View(recentOrders);
     }
-
-
 }
