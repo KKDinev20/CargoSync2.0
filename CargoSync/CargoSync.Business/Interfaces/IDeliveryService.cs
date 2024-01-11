@@ -2,8 +2,10 @@
 
 namespace CargoSync.Business.Interfaces
 {
+    // Interface representing the abstraction of a delivery service
     public interface IDeliveryService
     {
+        //Encapsulation using Access modifiers
         public List<Delivery> GetRecentOrders(int count);
 
         public int GetNewPackagesCount();
