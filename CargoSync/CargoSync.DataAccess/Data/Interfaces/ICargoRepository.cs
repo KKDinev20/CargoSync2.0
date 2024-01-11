@@ -2,8 +2,10 @@
 
 namespace CargoSync.DataAccess.Data.Interfaces
 {
+    // Interface for cargo-related data access operations
     public interface ICargoRepository
     {
-        public List<Cargo> GetAllCargo();
+        // Declaration of the GetAllCargo method to retrieve a list of all cargo items
+        List<Cargo> GetAllCargo();
     }
 }

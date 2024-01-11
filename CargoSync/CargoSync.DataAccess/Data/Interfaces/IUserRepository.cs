@@ -2,9 +2,10 @@
 
 namespace CargoSync.DataAccess.Data.Interfaces
 {
+    // Interface for user-related data access operations
     public interface IUserRepository
     {
-        public List<User> GetUsers();
+        // Declaration of the GetUsers method to retrieve a list of users
+        List<User> GetUsers();
     }
-
 }

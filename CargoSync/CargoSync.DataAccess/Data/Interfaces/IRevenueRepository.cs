@@ -2,8 +2,10 @@
 
 namespace CargoSync.DataAccess.Data.Interfaces
 {
+    // Interface for revenue-related data access operations
     public interface IRevenueRepository
     {
-        public List<Revenue> GetRevenues();
+        // Declaration of the GetRevenues method to retrieve a list of revenues
+        List<Revenue> GetRevenues();
     }
 }
