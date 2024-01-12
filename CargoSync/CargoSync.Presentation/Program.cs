@@ -17,7 +17,7 @@ namespace CargoSync.Presentation
 
             builder.Services.AddControllersWithViews();
 
-            string connectionString = "Server=.\\sqlexpress;Database=cargosync;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+            string connectionString = "Server=tcp:cargosync.database.windows.net,1433;Initial Catalog=CargoSync;Persist Security Info=False;User ID=kkdinev20;Password=Yuh02969;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
             builder.Services.AddDbContext<CargoSyncDbContext>(options =>
                 options.UseSqlServer(connectionString));

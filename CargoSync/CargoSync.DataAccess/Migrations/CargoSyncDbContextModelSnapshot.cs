@@ -23,13 +23,13 @@ namespace CargoSync.DataAccess.Migrations
 
             modelBuilder.Entity("CargoSync.DataAccess.Models.Cargo", b =>
                 {
-                    b.Property<int>("CargoID")
+                    b.Property<int>("CargoId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CargoID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CargoId"));
 
-                    b.Property<int>("DeliveryID")
+                    b.Property<int>("DeliveryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -39,18 +39,18 @@ namespace CargoSync.DataAccess.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.HasKey("CargoID");
+                    b.HasKey("CargoId");
 
                     b.ToTable("Cargos");
                 });
 
             modelBuilder.Entity("CargoSync.DataAccess.Models.Delivery", b =>
                 {
-                    b.Property<int>("DeliveryID")
+                    b.Property<int>("DeliveryId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DeliveryID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DeliveryId"));
 
                     b.Property<string>("Destination")
                         .IsRequired()
@@ -64,45 +64,39 @@ namespace CargoSync.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("DeliveryID");
+                    b.HasKey("DeliveryId");
 
                     b.ToTable("Deliveries");
                 });
 
             modelBuilder.Entity("CargoSync.DataAccess.Models.Revenue", b =>
                 {
-                    b.Property<int>("RevenueID")
+                    b.Property<int>("RevenueId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RevenueID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RevenueId"));
 
                     b.Property<decimal>("Amount")
                         .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("DeliveryID")
-                        .HasColumnType("int");
-
                     b.Property<string>("Month")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("RevenueID");
+                    b.HasKey("RevenueId");
 
                     b.ToTable("Revenue");
                 });
 
             modelBuilder.Entity("CargoSync.DataAccess.Models.User", b =>
                 {
-                    b.Property<int>("UserID")
+                    b.Property<int>("UserId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserID"));
-
-                    b.Property<int>("DeliveryID")
-                        .HasColumnType("int");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
 
                     b.Property<string>("UserName")
                         .IsRequired()
@@ -112,7 +106,7 @@ namespace CargoSync.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("UserID");
+                    b.HasKey("UserId");
 
                     b.ToTable("Users");
                 });

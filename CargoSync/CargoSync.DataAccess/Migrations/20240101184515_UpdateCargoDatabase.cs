@@ -14,33 +14,16 @@ namespace CargoSync.DataAccess.Migrations
                 name: "PK_Cargos",
                 table: "Cargos");
 
-            migrationBuilder.RenameColumn(
-                name: "CargoId",
-                table: "Cargos",
-                newName: "CargoID");
+            migrationBuilder.DropColumn(
+                name: "CargoID",
+                table: "Cargos");
 
-            migrationBuilder.RenameColumn(
-                name: "Destination",
-                table: "Cargos",
-                newName: "Description");
-
-            migrationBuilder.AlterColumn<int>(
+            migrationBuilder.AddColumn<int>(
                 name: "CargoID",
                 table: "Cargos",
                 type: "int",
                 nullable: false,
-                oldClrType: typeof(int),
-                oldType: "int")
-                .Annotation("SqlServer:Identity", "1, 1");
-
-            migrationBuilder.AlterColumn<int>(
-                name: "DeliveryID",
-                table: "Cargos",
-                type: "int",
-                nullable: false,
-                oldClrType: typeof(int),
-                oldType: "int")
-                .OldAnnotation("SqlServer:Identity", "1, 1");
+                defaultValue: 0);
 
             migrationBuilder.AddPrimaryKey(
                 name: "PK_Cargos",
@@ -55,33 +38,16 @@ namespace CargoSync.DataAccess.Migrations
                 name: "PK_Cargos",
                 table: "Cargos");
 
-            migrationBuilder.RenameColumn(
+            migrationBuilder.DropColumn(
+                name: "CargoID",
+                table: "Cargos");
+
+            migrationBuilder.AddColumn<int>(
                 name: "CargoID",
                 table: "Cargos",
-                newName: "CargoId");
-
-            migrationBuilder.RenameColumn(
-                name: "Description",
-                table: "Cargos",
-                newName: "Destination");
-
-            migrationBuilder.AlterColumn<int>(
-                name: "DeliveryID",
-                table: "Cargos",
                 type: "int",
                 nullable: false,
-                oldClrType: typeof(int),
-                oldType: "int")
-                .Annotation("SqlServer:Identity", "1, 1");
-
-            migrationBuilder.AlterColumn<int>(
-                name: "CargoId",
-                table: "Cargos",
-                type: "int",
-                nullable: false,
-                oldClrType: typeof(int),
-                oldType: "int")
-                .OldAnnotation("SqlServer:Identity", "1, 1");
+                defaultValue: 0);
 
             migrationBuilder.AddPrimaryKey(
                 name: "PK_Cargos",

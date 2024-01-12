@@ -116,3 +116,4 @@ INSERT INTO Cargos ([DeliveryID], Description, [Quantity]) VALUES
     (98, 'Coffee Table Books', 13),
     (99, 'Stationery Sets', 21),
     (100, 'Smart Lighting', 16);
+

@@ -21,9 +21,29 @@ namespace CargoSync.DataAccess.Data
         // Method to configure entity relationships and constraints
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Revenue>()
+                .HasKey(r => r.RevenueId);
+
+            modelBuilder.Entity<Revenue>()
+                .Property(r => r.RevenueId)
+                .ValueGeneratedOnAdd(); // Set identity property
+
+            modelBuilder.Entity<Revenue>()
+                .Property(r => r.Amount)
+                .IsRequired()
+                .HasPrecision(18, 2);
+
+            modelBuilder.Entity<Revenue>()
+                .Property(r => r.Month)
+                .IsRequired();
+
             // Delivery entity configuration
             modelBuilder.Entity<Delivery>()
                 .HasKey(d => d.DeliveryId);
+
+            modelBuilder.Entity<Delivery>()
+                .Property(d => d.DeliveryId)
+                .ValueGeneratedOnAdd(); // Set identity property
 
             modelBuilder.Entity<Delivery>()
                 .Property(d => d.Destination)
@@ -42,6 +62,10 @@ namespace CargoSync.DataAccess.Data
                 .HasKey(c => c.CargoId);
 
             modelBuilder.Entity<Cargo>()
+                .Property(c => c.CargoId)
+                .ValueGeneratedOnAdd(); // Set identity property
+
+            modelBuilder.Entity<Cargo>()
                 .Property(c => c.Description)
                 .IsRequired();
 
@@ -54,24 +78,15 @@ namespace CargoSync.DataAccess.Data
                 .HasKey(u => u.UserId);
 
             modelBuilder.Entity<User>()
+                .Property(u => u.UserId)
+                .ValueGeneratedOnAdd(); // Set identity property
+
+            modelBuilder.Entity<User>()
                 .Property(u => u.UserName)
                 .IsRequired();
 
             modelBuilder.Entity<User>()
                 .Property(u => u.UserType)
-                .IsRequired();
-
-            // Revenue entity configuration
-            modelBuilder.Entity<Revenue>()
-                .HasKey(r => r.RevenueId);
-
-            modelBuilder.Entity<Revenue>()
-                .Property(r => r.Amount)
-                .IsRequired()
-                .HasPrecision(18, 2);
-
-            modelBuilder.Entity<Revenue>()
-                .Property(r => r.Month)
                 .IsRequired();
 
             // Call the base class method

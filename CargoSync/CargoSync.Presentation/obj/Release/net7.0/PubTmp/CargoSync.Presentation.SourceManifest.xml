@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Presentation\obj\Release\net7.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Presentation\obj\Release\net7.0\PubTmp\EFSQLScripts\CargoSync.DataAccess.Data.CargoSyncDbContext.sql" />
+</sitemanifest>
