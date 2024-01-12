@@ -43,12 +43,9 @@
                 <a class="pagination-button" href="@Url.Action("Index", new { page = ViewBag.CurrentPage + 1 })">Next</a>
             }
 
-            <p>
-                <a asp-action="Create" class="create-button">Create New</a>
+            <!-- Updated styling for the "Create" button -->
+            <p class="create-button-container">
+                <a asp-action="Create" class="create-button">Add Delivery</a>
             </p>
         </div>
-
-        
-
-    </div>
 </div>

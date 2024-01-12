@@ -66,8 +66,8 @@
 
                     var ctx = document.getElementById('revenueChart').getContext('2d');
 
-                    var gradient = ctx.createLinearGradient(0, 0, 0, 400); 
-                    gradient.addColorStop(0, 'rgba(145, 18, 21, 0.8)'); 
+                    var gradient = ctx.createLinearGradient(0, 0, 0, 700); 
+                    gradient.addColorStop(0, 'rgba(145, 18, 21, 0.4)'); 
                     gradient.addColorStop(1, 'rgba(145, 18, 21, 0)');
 
                     var revenueChart = new Chart(ctx, {
@@ -102,7 +102,7 @@
                                     titleFontFamily: 'Lexend Deca',
                                     backgroundColor: 'rgba(0,0,0,0.3)',
                                     titleFontColor: 'red',
-                                    caretSize: 5,
+                                    caretSize: 8,
                                     cornerRadius: 2,
                                     xPadding: 10,
                                     yPadding: 10
