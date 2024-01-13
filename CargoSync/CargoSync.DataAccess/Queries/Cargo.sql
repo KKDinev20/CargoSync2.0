@@ -1,15 +1,3 @@
-CREATE TABLE [dbo].[Cargos] (
-    [CargoID]     INT            IDENTITY (1, 1) NOT NULL,
-    [Description] NVARCHAR (MAX) NOT NULL,
-    [Quantity]    INT            NOT NULL,
-    [DeliveryID]  INT            NOT NULL,
-    CONSTRAINT [PK_Cargos] PRIMARY KEY CLUSTERED ([CargoID] ASC),
-    CONSTRAINT [UQ_Cargos_DeliveryID] UNIQUE NONCLUSTERED ([DeliveryID] ASC, [CargoID] ASC),
-    CONSTRAINT [FK_Cargos_Deliveries] FOREIGN KEY ([DeliveryID]) REFERENCES [dbo].[Deliveries] ([DeliveryID])
-);
-
-
-
 INSERT INTO Cargos ([Description], [Quantity], [DeliveryID]) VALUES
     ('Garden Tools Set', 15, 1),
     ('Modern Wall Art', 22, 2),
