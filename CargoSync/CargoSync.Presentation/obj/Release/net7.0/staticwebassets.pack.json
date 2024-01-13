@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\CargoSync.Presentation.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\assets\\banner.svg",
+      "PackagePath": "staticwebassets\\assets\\banner.svg"
+    },
+    {
       "Id": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\assets\\logo.svg",
       "PackagePath": "staticwebassets\\assets\\logo.svg"
     },

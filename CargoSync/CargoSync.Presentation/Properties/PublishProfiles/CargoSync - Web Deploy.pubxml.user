@@ -9,6 +9,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAAa23hMd2qkuxIeA/rimtdAAAAAACAAAAAAAQZgAAAAEAACAAAAAdwWVzFcu4uy4ST9zIQ6UNZi2VHi/w29Ll8Ai+pp/vugAAAAAOgAAAAAIAACAAAADUrisCpqRxqbwcg397B2qjf8QtAlxfdt3a0ngUGVqvx4AAAADu9m2NccyFp1fr8tATqbjBLtC3o8ns2uYDzUtUQ42+cwlFyJHSh77179+yxg/OowWjmJ/WZfsMswKqgUrKKSb3myOV7kc1hJhKEBFakTf8Lbz8RAqI45z42g8kIt71CK7BCbDviyzb2n3WCCSHDMs91/0rnkwBlL4FZqwmIkXJGEAAAABc7kVClf+dM9gTvKdD9lx3cfUWLUO7m7galln8GSlHwkSbEZ7Z/JxStW/O2JB9AQVkA6hDhsoeNeunC/B59yz/</EncryptedPassword>
     <History>True|2024-01-12T21:18:12.7288663Z;True|2024-01-12T23:15:05.8965786+02:00;True|2024-01-12T22:54:43.0022085+02:00;False|2024-01-12T21:19:00.6620010+02:00;False|2024-01-12T21:12:40.6642097+02:00;</History>
     <LastFailureDetails />
+    <IsBasicAuthAllowed>True</IsBasicAuthAllowed>
   </PropertyGroup>
   <ItemGroup>
     <DestinationConnectionStrings Include="DefaultConnection">

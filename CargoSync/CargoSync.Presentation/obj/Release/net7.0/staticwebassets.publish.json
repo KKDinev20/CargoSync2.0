@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PY9r+n45vjeVaJRmPFk8mjv8AN2b7QtdlXgNsw/Mptg=",
+  "Hash": "sNRa5bc0yyez6gMAAhyuj5tM3071TXcT2fI6yUzaMac=",
   "Source": "CargoSync.Presentation",
   "BasePath": "_content/CargoSync.Presentation",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\CargoSync.Presentation.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\assets\\banner.svg",
+      "SourceId": "CargoSync.Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\",
+      "BasePath": "_content/CargoSync.Presentation",
+      "RelativePath": "assets/banner.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\banner.svg"
     },
     {
       "Identity": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\assets\\logo.svg",

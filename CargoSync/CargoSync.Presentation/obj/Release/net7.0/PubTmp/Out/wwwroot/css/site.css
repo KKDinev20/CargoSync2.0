@@ -522,6 +522,24 @@ thead th {
     color: var(--text-color);
 }
 
+.create-button-container {
+    margin-left: auto;
+}
+
+.create-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-button:hover {
+    background-color: var(--primary-color-light);
+}
+
 .create-button {
     background-color: var(--primary-color);
     color: white;
@@ -546,54 +564,53 @@ thead th {
     padding: 0;
 }
 
-.create-form .form-group {
-    position: relative;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
+    .create-form .form-group {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
 
-.create-form label {
-    display: block;
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 8px;
-    color: #c4c3ca;
-}
+    .create-form label {
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 8px;
+        color: #c4c3ca;
+    }
 
-.create-form input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    position: relative;
-    font-weight: 500;
-    outline: none;
-    color: #c4c3ca;
-    background-color: #1f2029;
-    transition: all 200ms linear;
-    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
-}
+    .create-form input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        position: relative;
+        font-weight: 500;
+        outline: none;
+        color: #c4c3ca;
+        background-color: #1f2029;
+        transition: all 200ms linear;
+        box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
+    }
 
-.create-form button {
-    background-color: #ffeba7;
-    color: #102770;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 200ms linear;
-    box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
-}
+    .create-form button {
+        background-color: #ffeba7;
+        color: #102770;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 200ms linear;
+        box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
+    }
 
-.create-form button:hover {
-    background-color: var(--primary-color);
-    color: #ffeba7;
-    box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
-}
-
+        .create-form button:hover {
+            background-color: var(--primary-color);
+            color: #ffeba7;
+            box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+        }
 
 
 @media (max-width: 1000px) {

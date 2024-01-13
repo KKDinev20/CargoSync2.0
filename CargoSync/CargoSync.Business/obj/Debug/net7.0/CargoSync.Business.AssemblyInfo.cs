@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CargoSync.Business")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b98e82421d311707d74b8cfc5a7e2767901703c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5702f016fd82e81be49c4ab12b06c308036a04ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("CargoSync.Business")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CargoSync.Business")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
