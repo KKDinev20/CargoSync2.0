@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wlz9x7hmAmJbGT6rvh+qvtRqL2VB1alz1GF91qT9b6g=",
+  "Hash": "RnB6tRIxb4HZjl0mDe/7lUVPwtAi5ILIoQ7QXW/Ug9c=",
   "Source": "CargoSync.Presentation",
   "BasePath": "_content/CargoSync.Presentation",
   "Mode": "Default",
@@ -55,6 +55,44 @@
       "OriginalItemSpec": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CargoSync.Presentation.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\assets\\asp.net.png",
+      "SourceId": "CargoSync.Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\",
+      "BasePath": "_content/CargoSync.Presentation",
+      "RelativePath": "assets/asp.net.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\asp.net.png"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\assets\\azure-data-studio.png",
+      "SourceId": "CargoSync.Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\",
+      "BasePath": "_content/CargoSync.Presentation",
+      "RelativePath": "assets/azure-data-studio.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\azure-data-studio.png"
+    },
+    {
       "Identity": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\assets\\banner.svg",
       "SourceId": "CargoSync.Presentation",
       "SourceType": "Discovered",
@@ -74,12 +112,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\banner.svg"
     },
     {
-      "Identity": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\assets\\c-sharp.png",
+      "Identity": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\assets\\ef.png",
       "SourceId": "CargoSync.Presentation",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\",
       "BasePath": "_content/CargoSync.Presentation",
-      "RelativePath": "assets/c-sharp.png",
+      "RelativePath": "assets/ef.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,7 +128,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\c-sharp.png"
+      "OriginalItemSpec": "wwwroot\\assets\\ef.png"
     },
     {
       "Identity": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\assets\\logo.svg",

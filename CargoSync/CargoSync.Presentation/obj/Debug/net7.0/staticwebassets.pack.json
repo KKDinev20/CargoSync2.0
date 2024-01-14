@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\CargoSync.Presentation.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\assets\\asp.net.png",
+      "PackagePath": "staticwebassets\\assets\\asp.net.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\assets\\azure-data-studio.png",
+      "PackagePath": "staticwebassets\\assets\\azure-data-studio.png"
+    },
+    {
       "Id": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\assets\\banner.svg",
       "PackagePath": "staticwebassets\\assets\\banner.svg"
     },
     {
-      "Id": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\assets\\c-sharp.png",
-      "PackagePath": "staticwebassets\\assets\\c-sharp.png"
+      "Id": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\assets\\ef.png",
+      "PackagePath": "staticwebassets\\assets\\ef.png"
     },
     {
       "Id": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Presentation\\wwwroot\\assets\\logo.svg",
