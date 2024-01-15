@@ -9,7 +9,7 @@ namespace CargoSync.Tests
     {
 
         [Test]
-        public void GetAllCargoShouldReturnCorrectResults()
+        public void TestGetAllCargoShouldReturnCorrectResults()
         {
             // Arrange
             Mock<ICargoRepository> mockRepository = new Mock<ICargoRepository>();
@@ -49,7 +49,7 @@ namespace CargoSync.Tests
         }
 
         [Test]
-        public void GetAllCargoShouldNotInterfereWithEachOther()
+        public void TestGetAllCargoShouldNotInterfereWithEachOther()
         {
             // Arrange
             Mock<ICargoRepository> mockRepository = new Mock<ICargoRepository>();
@@ -90,7 +90,7 @@ namespace CargoSync.Tests
 
 
         [Test]
-        public void GetAllCargo_ShouldHandleEmptyRepository()
+        public void TestGetAllCargo_ShouldHandleEmptyRepository()
         {
             // Arrange
             Mock<ICargoRepository> mockRepository = new Mock<ICargoRepository>();
@@ -108,7 +108,7 @@ namespace CargoSync.Tests
         }
 
         [Test]
-        public void GetAllCargoShouldHandleExceptionFromRepository()
+        public void TestGetAllCargoShouldHandleExceptionFromRepository()
         {
             // Arrange
             Mock<ICargoRepository> mockRepository = new Mock<ICargoRepository>();
@@ -122,7 +122,7 @@ namespace CargoSync.Tests
         }
 
         [Test]
-        public void GetAllCargo_ConcurrentAccess_ShouldReturnDistinctResults()
+        public void TestGetAllCargoShouldReturnDistinctResults()
         {
             // Arrange
             Mock<ICargoRepository> mockRepository = new Mock<ICargoRepository>();

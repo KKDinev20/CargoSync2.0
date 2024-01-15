@@ -8,7 +8,7 @@ namespace CargoSync.Tests
     public class UserServiceTests
     {
         [Test]
-        public async Task GetUsersAsync_ShouldReturnUserList()
+        public async Task TestGetUsersAsync_ShouldReturnUserList()
         {
             // Arrange
             Mock<IUserRepository> mockRepository = new Mock<IUserRepository>();
@@ -30,7 +30,7 @@ namespace CargoSync.Tests
         }
 
         [Test]
-        public async Task GetUsersAsync_ShouldReturnEmptyListWhenNoUsers()
+        public async Task TestGetUsersAsync_ShouldReturnEmptyListWhenNoUsers()
         {
             // Arrange
             Mock<IUserRepository> mockRepository = new Mock<IUserRepository>();
@@ -48,7 +48,7 @@ namespace CargoSync.Tests
         }
 
         [Test]
-        public void GetUsersAsync_ShouldReturnUserListSynchronously()
+        public void TestGetUsersAsyncShouldReturnUserListSynchronously()
         {
             // Arrange
             Mock<IUserRepository> mockRepository = new Mock<IUserRepository>();
@@ -76,7 +76,7 @@ namespace CargoSync.Tests
         }
 
         [Test]
-        public async Task GetUsersAsyncShouldPropagateRepositoryException()
+        public async Task TestGetUsersAsyncShouldPropagateRepositoryException()
         {
             // Arrange
             Mock<IUserRepository> mockRepository = new Mock<IUserRepository>();

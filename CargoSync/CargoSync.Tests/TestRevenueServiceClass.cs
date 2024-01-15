@@ -8,7 +8,7 @@ namespace CargoSync.Tests
     public class RevenueServiceTests
     {
         [Test]
-        public async Task GetRevenuesAsync_ShouldReturnRevenueList()
+        public async Task TestGetRevenuesAsync_ShouldReturnRevenueList()
         {
             // Arrange
             Mock<IRevenueRepository> mockRepository = new Mock<IRevenueRepository>();
@@ -31,7 +31,7 @@ namespace CargoSync.Tests
         }
 
         [Test]
-        public async Task GetRevenuesAsync_ShouldReturnEmptyListWhenNoRevenues()
+        public async Task TestGetRevenuesAsync_ShouldReturnEmptyListWhenNoRevenues()
         {
             // Arrange
             Mock<IRevenueRepository> mockRepository = new Mock<IRevenueRepository>();
@@ -49,14 +49,14 @@ namespace CargoSync.Tests
         }
 
         [Test]
-        public void Constructor_ShouldThrowArgumentNullException_WhenRevenueRepositoryIsNull()
+        public void TestConstructor_ShouldThrowArgumentNullException_WhenRevenueRepositoryIsNull()
         {
             // Arrange & Act & Assert
             Assert.Throws<ArgumentNullException>(() => new RevenueService(null));
         }
 
         [Test]
-        public async Task GetRevenuesAsync_ShouldPropagateRepositoryException()
+        public async Task TestGetRevenuesAsync_ShouldPropagateRepositoryException()
         {
             // Arrange
             Mock<IRevenueRepository> mockRepository = new Mock<IRevenueRepository>();
@@ -70,7 +70,7 @@ namespace CargoSync.Tests
         }
 
         [Test]
-        public void GetRevenuesAsync_ShouldReturnDistinctResultsForConcurrentAccess()
+        public void TestGetRevenuesAsyncShouldReturnDistinctResultsForConcurrentAccess()
         {
             // Arrange
             Mock<IRevenueRepository> mockRepository = new Mock<IRevenueRepository>();
