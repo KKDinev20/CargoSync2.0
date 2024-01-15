@@ -1,4 +1,4 @@
-# CargoSync - Solution for the Transport assignment
+<h1 style="text-align: center;">CargoSync - Solution for the Transport assignment</h1>
 
 ![CargoSync Banner](./CargoSync/CargoSync.Presentation/wwwroot/assets/banner.svg)
 

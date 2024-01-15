@@ -7,3 +7,6 @@ CREATE TABLE [dbo].[Revenue] (
     CONSTRAINT [FK_Revenue_Deliveries] FOREIGN KEY ([RevenueID]) REFERENCES [dbo].[Deliveries] ([DeliveryID])
 );
 
+UPDATE [dbo].[Revenue]
+SET Amount = 250
+WHERE RevenueId = 101

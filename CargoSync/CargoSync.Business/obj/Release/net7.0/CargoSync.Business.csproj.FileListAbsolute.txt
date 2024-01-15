@@ -16,3 +16,20 @@ C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev2
 C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\obj\Release\net7.0\CargoSync.Business.pdb
 C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\obj\Release\net7.0\CargoSync.Business.genruntimeconfig.cache
 C:\Users\NITRO 5\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\obj\Release\net7.0\ref\CargoSync.Business.dll
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\bin\Release\net7.0\CargoSync.Business.deps.json
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\bin\Release\net7.0\CargoSync.Business.runtimeconfig.json
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\bin\Release\net7.0\CargoSync.Business.dll
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\bin\Release\net7.0\CargoSync.Business.pdb
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\bin\Release\net7.0\CargoSync.DataAccess.dll
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\bin\Release\net7.0\CargoSync.DataAccess.pdb
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\obj\Release\net7.0\CargoSync.Business.csproj.AssemblyReference.cache
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\obj\Release\net7.0\CargoSync.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\obj\Release\net7.0\CargoSync.Business.AssemblyInfoInputs.cache
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\obj\Release\net7.0\CargoSync.Business.AssemblyInfo.cs
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\obj\Release\net7.0\CargoSync.Business.csproj.CoreCompileInputs.cache
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\obj\Release\net7.0\CargoSync.Business.csproj.CopyComplete
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\obj\Release\net7.0\CargoSync.Business.dll
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\obj\Release\net7.0\refint\CargoSync.Business.dll
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\obj\Release\net7.0\CargoSync.Business.pdb
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\obj\Release\net7.0\CargoSync.Business.genruntimeconfig.cache
+C:\Users\KKDinev20\source\repos\2324-technologies-11-transport-assignment-KKDinev20\CargoSync\CargoSync.Business\obj\Release\net7.0\ref\CargoSync.Business.dll

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj": {}
+    "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj": {
+    "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj",
         "projectName": "CargoSync.DataAccess",
-        "projectPath": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\NITRO 5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\KKDinev20\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\NITRO 5\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KKDinev20\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -83,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

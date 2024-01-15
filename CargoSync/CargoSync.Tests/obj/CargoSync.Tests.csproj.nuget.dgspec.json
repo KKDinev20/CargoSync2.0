@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Tests\\CargoSync.Tests.csproj": {}
+    "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Tests\\CargoSync.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Business\\CargoSync.Business.csproj": {
+    "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Business\\CargoSync.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Business\\CargoSync.Business.csproj",
+        "projectUniqueName": "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Business\\CargoSync.Business.csproj",
         "projectName": "CargoSync.Business",
-        "projectPath": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Business\\CargoSync.Business.csproj",
-        "packagesPath": "C:\\Users\\NITRO 5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Business\\obj\\",
+        "projectPath": "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Business\\CargoSync.Business.csproj",
+        "packagesPath": "C:\\Users\\KKDinev20\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Business\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\NITRO 5\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KKDinev20\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj"
+              "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj"
               }
             }
           }
@@ -87,21 +92,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj": {
+    "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj",
         "projectName": "CargoSync.DataAccess",
-        "projectPath": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\NITRO 5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\KKDinev20\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\NITRO 5\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KKDinev20\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -109,6 +118,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -170,21 +180,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Tests\\CargoSync.Tests.csproj": {
+    "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Tests\\CargoSync.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Tests\\CargoSync.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Tests\\CargoSync.Tests.csproj",
         "projectName": "CargoSync.Tests",
-        "projectPath": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Tests\\CargoSync.Tests.csproj",
-        "packagesPath": "C:\\Users\\NITRO 5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Tests\\obj\\",
+        "projectPath": "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Tests\\CargoSync.Tests.csproj",
+        "packagesPath": "C:\\Users\\KKDinev20\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Tests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\NITRO 5\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KKDinev20\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -192,17 +206,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Business\\CargoSync.Business.csproj": {
-                "projectPath": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Business\\CargoSync.Business.csproj"
+              "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Business\\CargoSync.Business.csproj": {
+                "projectPath": "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.Business\\CargoSync.Business.csproj"
               },
-              "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\NITRO 5\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj"
+              "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\KKDinev20\\source\\repos\\2324-technologies-11-transport-assignment-KKDinev20\\CargoSync\\CargoSync.DataAccess\\CargoSync.DataAccess.csproj"
               }
             }
           }
@@ -258,7 +273,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
