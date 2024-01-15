@@ -1,6 +1,7 @@
 <h1 style="text-align: center;">CargoSync - Solution for the Transport assignment</h1>
 
-![CargoSync Banner](./CargoSync/CargoSync.Presentation/wwwroot/assets/banner.svg)
+<img src="./CargoSync/CargoSync.Presentation/wwwroot/assets/banner.svg" alt="CargoSync Banner" style="width: 70%;">
+
 
 ## Table of Contents
 - ### Project Information
@@ -17,6 +18,7 @@
 - ### Installation
 - ### Build from Source
 - ### Access Online
+- ### [Project Wiki](https://github.com/codingburgas/2324-technologies-11-transport-assignment-KKDinev20/wiki)
 
 ## 🚀 Project Information
 
