@@ -1,6 +1,6 @@
 <h1 style="text-align: center;">CargoSync - Solution for the Transport assignment</h1>
 
-<img src="./CargoSync/CargoSync.Presentation/wwwroot/assets/banner.svg" alt="CargoSync Banner" style="width: 70%;">
+<img src="./CargoSync/CargoSync.Presentation/wwwroot/assets/banner.svg" alt="CargoSync Banner">
 
 
 ## Table of Contents
